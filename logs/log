@@ -1,0 +1,1208 @@
+[I 161123 16:26:40 web:1946] 304 GET /register.html (127.0.0.1) 11.86ms
+[I 161123 16:26:41 web:1946] 304 GET /static/js/ihome/register.js (127.0.0.1) 2.98ms
+[E 161123 16:26:41 web:1524] Uncaught exception GET /api/verifycode?pcodeid=&codeid=10891f04-9d39-4473-a0cf-245ac7fd1205 (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='127.0.0.1:8000', method='GET', uri='/api/verifycode?pcodeid=&codeid=10891f04-9d39-4473-a0cf-245ac7fd1205', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Accept-Language': 'zh-CN,zh;q=0.8', 'Accept-Encoding': 'gzip, deflate, sdch', 'Host': '127.0.0.1:8000', 'Accept': 'image/webp,image/*,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36', 'Connection': 'keep-alive', 'Referer': 'http://127.0.0.1:8000/register.html', 'Cookie': 'csrftoken=K1W4Bk10gHHLcKu4W5FtLOYm3hGyiAHp'})
+    Traceback (most recent call last):
+      File "/home/python/.virtualenvs/tornado_py2/local/lib/python2.7/site-packages/tornado/web.py", line 1422, in _execute
+        result = self.prepare()
+      File "/mnt/hgfs/Desktop/tornado_project/handlers/BaseHandler.py", line 19, in prepare
+        if self.request.headers.get("Content-Type").startswith("application/json"):
+    AttributeError: 'NoneType' object has no attribute 'startswith'
+[E 161123 16:26:41 web:976] Uncaught exception in write_error
+    Traceback (most recent call last):
+      File "/home/python/.virtualenvs/tornado_py2/local/lib/python2.7/site-packages/tornado/web.py", line 974, in send_error
+        self.write_error(status_code, **kwargs)
+    TypeError: write_error() takes exactly 1 argument (3 given)
+[E 161123 16:26:41 web:1946] 500 GET /api/verifycode?pcodeid=&codeid=10891f04-9d39-4473-a0cf-245ac7fd1205 (127.0.0.1) 8.66ms
+[I 161123 16:27:41 autoreload:204] /mnt/hgfs/Desktop/tornado_project/handlers/BaseHandler.py modified; restarting server
+[I 161123 16:27:43 web:1946] 304 GET /register.html (127.0.0.1) 11.86ms
+[I 161123 16:27:44 web:1946] 200 GET /api/verifycode?pcodeid=&codeid=b4034802-4c2e-4a55-af43-164d289e78f9 (127.0.0.1) 83.93ms
+[I 161123 16:27:45 web:1946] 200 GET /api/verifycode?pcodeid=b4034802-4c2e-4a55-af43-164d289e78f9&codeid=64245ddf-2202-4f28-b46d-3f2a4ea908dc (127.0.0.1) 53.24ms
+[I 161123 16:27:49 web:1946] 200 GET /api/verifycode?pcodeid=64245ddf-2202-4f28-b46d-3f2a4ea908dc&codeid=520f0234-6c6e-4cbc-a586-86d7e1979771 (127.0.0.1) 60.44ms
+[I 161123 16:30:45 autoreload:204] /mnt/hgfs/Desktop/tornado_project/handlers/VerifyCode.py modified; restarting server
+[I 161123 16:32:35 web:1946] 304 GET /register.html (127.0.0.1) 13.19ms
+[I 161123 16:32:35 web:1946] 304 GET /static/js/ihome/register.js (127.0.0.1) 2.69ms
+[I 161123 16:32:35 web:1946] 200 GET /api/verifycode?pcodeid=&codeid=c3339d11-1f0f-4c75-8a62-50934fa2faa0 (127.0.0.1) 76.41ms
+[I 161123 16:32:36 web:1946] 200 GET /api/verifycode?pcodeid=c3339d11-1f0f-4c75-8a62-50934fa2faa0&codeid=3c65a6d1-cddb-4641-9851-7deda43cc335 (127.0.0.1) 50.42ms
+[I 161123 16:32:53 web:1946] 304 GET /register.html (127.0.0.1) 2.16ms
+[I 161123 16:32:53 web:1946] 200 GET /api/verifycode?pcodeid=&codeid=ccea216b-c2a2-4736-8a94-7c192374bef4 (127.0.0.1) 39.86ms
+[I 161123 16:34:41 autoreload:204] /mnt/hgfs/Desktop/tornado_project/handlers/BaseHandler.py modified; restarting server
+[I 161123 16:35:49 autoreload:204] /mnt/hgfs/Desktop/tornado_project/handlers/BaseHandler.py modified; restarting server
+[I 161123 16:36:26 autoreload:204] /mnt/hgfs/Desktop/tornado_project/handlers/VerifyCode.py modified; restarting server
+[I 161123 17:06:42 web:1946] 304 GET /register.html (127.0.0.1) 8.20ms
+[I 161123 17:06:42 web:1946] 304 GET /static/js/ihome/register.js (127.0.0.1) 2.94ms
+[I 161123 17:06:42 web:1946] 200 GET /api/verifycode?pcodeid=&codeid=00ba5882-f22e-4ee4-8fe4-f06960912c46 (127.0.0.1) 95.82ms
+[I 161123 17:06:49 web:1946] 200 GET /api/verifycode?pcodeid=00ba5882-f22e-4ee4-8fe4-f06960912c46&codeid=86e9e4f7-5f48-4cfb-9125-474b87cea2e7 (127.0.0.1) 45.67ms
+[W 161123 17:06:55 web:1521] 403 POST /api/smscode (127.0.0.1): '_xsrf' argument missing from POST
+[E 161123 17:06:55 web:976] Uncaught exception in write_error
+    Traceback (most recent call last):
+      File "/home/python/.virtualenvs/tornado_py2/local/lib/python2.7/site-packages/tornado/web.py", line 974, in send_error
+        self.write_error(status_code, **kwargs)
+    TypeError: write_error() takes exactly 1 argument (3 given)
+[W 161123 17:06:55 web:1946] 403 POST /api/smscode (127.0.0.1) 6.66ms
+[I 161123 17:08:17 autoreload:204] /mnt/hgfs/Desktop/tornado_project/handlers/VerifyCode.py modified; restarting server
+[I 161123 17:08:27 web:1946] 304 GET /register.html (127.0.0.1) 16.29ms
+[I 161123 17:08:28 web:1946] 200 GET /api/verifycode?pcodeid=&codeid=f1c30268-4243-4e84-b71d-899ececb4a4f (127.0.0.1) 88.24ms
+[I 161123 17:08:32 web:1946] 200 GET /api/verifycode?pcodeid=f1c30268-4243-4e84-b71d-899ececb4a4f&codeid=e38dc97c-f098-4895-90f6-a31aa52932f9 (127.0.0.1) 37.65ms
+[I 161123 17:08:34 web:1946] 200 GET /api/verifycode?pcodeid=e38dc97c-f098-4895-90f6-a31aa52932f9&codeid=c0e1fdce-f1f8-4433-9cf8-d23a19fc66ec (127.0.0.1) 54.56ms
+[W 161123 17:08:38 web:1521] 403 POST /api/smscode (127.0.0.1): '_xsrf' argument missing from POST
+[E 161123 17:08:38 web:976] Uncaught exception in write_error
+    Traceback (most recent call last):
+      File "/home/python/.virtualenvs/tornado_py2/local/lib/python2.7/site-packages/tornado/web.py", line 974, in send_error
+        self.write_error(status_code, **kwargs)
+    TypeError: write_error() takes exactly 1 argument (3 given)
+[W 161123 17:08:38 web:1946] 403 POST /api/smscode (127.0.0.1) 5.05ms
+[I 161123 17:11:26 web:1946] 304 GET /register.html (127.0.0.1) 3.56ms
+[I 161123 17:11:26 web:1946] 304 GET /static/plugins/bootstrap/css/bootstrap.min.css (127.0.0.1) 3.47ms
+[I 161123 17:11:26 web:1946] 304 GET /static/plugins/font-awesome/css/font-awesome.min.css (127.0.0.1) 2.85ms
+[I 161123 17:11:26 web:1946] 304 GET /static/css/reset.css (127.0.0.1) 3.29ms
+[I 161123 17:11:26 web:1946] 304 GET /static/css/ihome/register.css (127.0.0.1) 5.71ms
+[I 161123 17:11:26 web:1946] 304 GET /static/images/logo@128x59.png (127.0.0.1) 3.80ms
+[I 161123 17:11:26 web:1946] 304 GET /static/css/ihome/main.css (127.0.0.1) 2.31ms
+[I 161123 17:11:26 web:1946] 304 GET /static/js/jquery.min.js (127.0.0.1) 2.85ms
+[I 161123 17:11:26 web:1946] 304 GET /static/plugins/bootstrap/js/bootstrap.min.js (127.0.0.1) 2.50ms
+[I 161123 17:11:26 web:1946] 304 GET /static/js/ihome/register.js (127.0.0.1) 2.20ms
+[I 161123 17:11:26 web:1946] 200 GET /api/verifycode?pcodeid=&codeid=a6f0fdd3-fcc7-4604-8be9-9e9bc548843e (127.0.0.1) 54.47ms
+[I 161123 17:12:25 autoreload:204] /mnt/hgfs/Desktop/tornado_project/config.py modified; restarting server
+[I 161123 17:12:31 web:1946] 304 GET /register.html (127.0.0.1) 11.17ms
+[I 161123 17:12:31 web:1946] 200 GET /api/verifycode?pcodeid=&codeid=34548610-4b12-4cc4-9108-ccea7ba7fe7f (127.0.0.1) 82.54ms
+[E 161123 17:12:45 web:1524] Uncaught exception POST /api/smscode (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='127.0.0.1:8000', method='POST', uri='/api/smscode', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Origin': 'http://127.0.0.1:8000', 'Content-Length': '104', 'Accept-Language': 'zh-CN,zh;q=0.8', 'Accept-Encoding': 'gzip, deflate', 'Host': '127.0.0.1:8000', 'Accept': 'application/json, text/javascript, */*; q=0.01', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36', 'Connection': 'keep-alive', 'X-Requested-With': 'XMLHttpRequest', 'Referer': 'http://127.0.0.1:8000/register.html', 'Cookie': 'csrftoken=K1W4Bk10gHHLcKu4W5FtLOYm3hGyiAHp', 'Content-Type': 'application/json'})
+    Traceback (most recent call last):
+      File "/home/python/.virtualenvs/tornado_py2/local/lib/python2.7/site-packages/tornado/web.py", line 1443, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/mnt/hgfs/Desktop/tornado_project/handlers/VerifyCode.py", line 45, in post
+        if not re.match(r"1\d{10}", mobile):
+    NameError: global name 're' is not defined
+[E 161123 17:12:45 web:976] Uncaught exception in write_error
+    Traceback (most recent call last):
+      File "/home/python/.virtualenvs/tornado_py2/local/lib/python2.7/site-packages/tornado/web.py", line 974, in send_error
+        self.write_error(status_code, **kwargs)
+    TypeError: write_error() takes exactly 1 argument (3 given)
+[E 161123 17:12:45 web:1946] 500 POST /api/smscode (127.0.0.1) 5.73ms
+[I 161123 17:12:58 web:1946] 200 GET /static/plugins/bootstrap/css/bootstrap.min.css.map (127.0.0.1) 65.02ms
+[I 161123 17:13:31 autoreload:204] /mnt/hgfs/Desktop/tornado_project/handlers/VerifyCode.py modified; restarting server
+[I 161123 17:13:37 autoreload:204] /mnt/hgfs/Desktop/tornado_project/handlers/VerifyCode.py modified; restarting server
+[I 161123 17:13:37 web:1946] 304 GET /register.html (127.0.0.1) 15.97ms
+[I 161123 17:13:37 web:1946] 304 GET /static/plugins/bootstrap/css/bootstrap.min.css (127.0.0.1) 3.45ms
+[I 161123 17:13:37 web:1946] 304 GET /static/plugins/font-awesome/css/font-awesome.min.css (127.0.0.1) 2.46ms
+[I 161123 17:13:37 web:1946] 304 GET /static/css/reset.css (127.0.0.1) 2.09ms
+[I 161123 17:13:37 web:1946] 304 GET /static/css/ihome/main.css (127.0.0.1) 2.26ms
+[I 161123 17:13:37 web:1946] 304 GET /static/css/ihome/register.css (127.0.0.1) 2.36ms
+[I 161123 17:13:37 web:1946] 304 GET /static/images/logo@128x59.png (127.0.0.1) 2.11ms
+[I 161123 17:13:37 web:1946] 304 GET /static/js/jquery.min.js (127.0.0.1) 5.75ms
+[I 161123 17:13:37 web:1946] 304 GET /static/plugins/bootstrap/js/bootstrap.min.js (127.0.0.1) 3.54ms
+[I 161123 17:13:37 web:1946] 304 GET /static/js/ihome/register.js (127.0.0.1) 2.47ms
+[I 161123 17:13:38 web:1946] 200 GET /api/verifycode?pcodeid=&codeid=9358034b-6303-476f-9410-a5dc6b202399 (127.0.0.1) 77.09ms
+[E 161123 17:14:09 web:1524] Uncaught exception POST /api/smscode (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='127.0.0.1:8000', method='POST', uri='/api/smscode', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Origin': 'http://127.0.0.1:8000', 'Content-Length': '104', 'Accept-Language': 'zh-CN,zh;q=0.8', 'Accept-Encoding': 'gzip, deflate', 'Host': '127.0.0.1:8000', 'Accept': 'application/json, text/javascript, */*; q=0.01', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36', 'Connection': 'keep-alive', 'X-Requested-With': 'XMLHttpRequest', 'Referer': 'http://127.0.0.1:8000/register.html', 'Cookie': 'csrftoken=K1W4Bk10gHHLcKu4W5FtLOYm3hGyiAHp', 'Content-Type': 'application/json'})
+    Traceback (most recent call last):
+      File "/home/python/.virtualenvs/tornado_py2/local/lib/python2.7/site-packages/tornado/web.py", line 1443, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/mnt/hgfs/Desktop/tornado_project/handlers/VerifyCode.py", line 58, in post
+        if real_image_code.lower() != image_code_text.lower():
+    NameError: global name 'real_image_code' is not defined
+[E 161123 17:14:09 web:976] Uncaught exception in write_error
+    Traceback (most recent call last):
+      File "/home/python/.virtualenvs/tornado_py2/local/lib/python2.7/site-packages/tornado/web.py", line 974, in send_error
+        self.write_error(status_code, **kwargs)
+    TypeError: write_error() takes exactly 1 argument (3 given)
+[E 161123 17:14:09 web:1946] 500 POST /api/smscode (127.0.0.1) 6.38ms
+[I 161123 17:14:55 web:1946] 304 GET /register.html (127.0.0.1) 2.05ms
+[I 161123 17:14:56 web:1946] 200 GET /api/verifycode?pcodeid=&codeid=447253a5-ba1a-4cb2-a108-5281c156a847 (127.0.0.1) 47.30ms
+[I 161123 17:14:57 autoreload:204] /mnt/hgfs/Desktop/tornado_project/handlers/VerifyCode.py modified; restarting server
+[I 161123 17:15:01 web:1946] 304 GET /register.html (127.0.0.1) 12.21ms
+[I 161123 17:15:01 web:1946] 200 GET /api/verifycode?pcodeid=&codeid=23243f39-6a57-46cd-bb2f-52605a8496aa (127.0.0.1) 88.14ms
+[E 161123 17:15:13 web:1524] Uncaught exception POST /api/smscode (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='127.0.0.1:8000', method='POST', uri='/api/smscode', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Origin': 'http://127.0.0.1:8000', 'Content-Length': '104', 'Accept-Language': 'zh-CN,zh;q=0.8', 'Accept-Encoding': 'gzip, deflate', 'Host': '127.0.0.1:8000', 'Accept': 'application/json, text/javascript, */*; q=0.01', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36', 'Connection': 'keep-alive', 'X-Requested-With': 'XMLHttpRequest', 'Referer': 'http://127.0.0.1:8000/register.html', 'Cookie': 'csrftoken=K1W4Bk10gHHLcKu4W5FtLOYm3hGyiAHp', 'Content-Type': 'application/json'})
+    Traceback (most recent call last):
+      File "/home/python/.virtualenvs/tornado_py2/local/lib/python2.7/site-packages/tornado/web.py", line 1443, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/mnt/hgfs/Desktop/tornado_project/handlers/VerifyCode.py", line 63, in post
+        sms_code = "%04d" %randow.randint(0,9999)
+    NameError: global name 'randow' is not defined
+[E 161123 17:15:13 web:976] Uncaught exception in write_error
+    Traceback (most recent call last):
+      File "/home/python/.virtualenvs/tornado_py2/local/lib/python2.7/site-packages/tornado/web.py", line 974, in send_error
+        self.write_error(status_code, **kwargs)
+    TypeError: write_error() takes exactly 1 argument (3 given)
+[E 161123 17:15:13 web:1946] 500 POST /api/smscode (127.0.0.1) 10.33ms
+[I 161123 17:15:28 autoreload:204] /mnt/hgfs/Desktop/tornado_project/handlers/VerifyCode.py modified; restarting server
+[I 161123 17:15:32 web:1946] 304 GET /register.html (127.0.0.1) 10.59ms
+[I 161123 17:15:32 web:1946] 200 GET /api/verifycode?pcodeid=&codeid=803bc908-1758-4258-a3d2-22fdc805336a (127.0.0.1) 74.15ms
+[E 161123 17:15:44 VerifyCode:74] global name 'cpp' is not defined
+[I 161123 17:15:44 web:1946] 200 POST /api/smscode (127.0.0.1) 1.88ms
+[I 161123 17:16:05 autoreload:204] /mnt/hgfs/Desktop/tornado_project/handlers/VerifyCode.py modified; restarting server
+[I 161123 17:16:07 web:1946] 304 GET /register.html (127.0.0.1) 10.20ms
+[I 161123 17:16:08 web:1946] 200 GET /api/verifycode?pcodeid=&codeid=8addd144-beda-4fb5-88b4-018f4f3c8908 (127.0.0.1) 84.25ms
+[I 161123 17:16:16 web:1946] 200 POST /api/smscode (127.0.0.1) 542.63ms
+[I 161123 17:20:37 autoreload:204] /mnt/hgfs/Desktop/tornado_project/handlers/VerifyCode.py modified; restarting server
+[I 161123 17:22:36 autoreload:204] /mnt/hgfs/Desktop/tornado_project/handlers/BaseHandler.py modified; restarting server
+[I 161123 17:28:07 autoreload:204] /mnt/hgfs/Desktop/tornado_project/handlers/BaseHandler.py modified; restarting server
+[I 161123 17:28:14 autoreload:204] /mnt/hgfs/Desktop/tornado_project/handlers/BaseHandler.py modified; restarting server
+[I 161123 17:29:51 autoreload:204] /mnt/hgfs/Desktop/tornado_project/handlers/VerifyCode.py modified; restarting server
+[I 161123 17:30:22 autoreload:204] /mnt/hgfs/Desktop/tornado_project/handlers/VerifyCode.py modified; restarting server
+[I 161123 18:35:22 autoreload:204] /mnt/hgfs/Desktop/tornado_project/handlers/VerifyCode.py modified; restarting server
+[I 161123 18:44:11 web:1946] 304 GET /register.html (127.0.0.1) 123.21ms
+[I 161123 18:44:11 web:1946] 304 GET /static/js/ihome/register.js (127.0.0.1) 110.50ms
+[I 161123 18:44:11 web:1946] 200 GET /api/verifycode?pcodeid=&codeid=02da32dd-4e60-4b40-913c-202f5903e385 (127.0.0.1) 201.35ms
+[I 161123 18:44:24 web:1946] 200 POST /api/smscode (127.0.0.1) 355.15ms
+[I 161123 18:55:36 web:1946] 200 GET /register.html (127.0.0.1) 3.28ms
+[I 161123 18:55:36 web:1946] 304 GET /static/plugins/bootstrap/css/bootstrap.min.css (127.0.0.1) 85.52ms
+[I 161123 18:55:36 web:1946] 304 GET /static/css/ihome/register.css (127.0.0.1) 84.15ms
+[I 161123 18:55:36 web:1946] 304 GET /static/images/logo@128x59.png (127.0.0.1) 61.96ms
+[I 161123 18:55:36 web:1946] 304 GET /static/plugins/font-awesome/css/font-awesome.min.css (127.0.0.1) 158.39ms
+[I 161123 18:55:36 web:1946] 304 GET /static/css/reset.css (127.0.0.1) 17.69ms
+[I 161123 18:55:36 web:1946] 304 GET /static/css/ihome/main.css (127.0.0.1) 3.59ms
+[I 161123 18:55:36 web:1946] 304 GET /static/plugins/bootstrap/js/bootstrap.min.js (127.0.0.1) 56.63ms
+[I 161123 18:55:36 web:1946] 200 GET /static/js/ihome/register.js (127.0.0.1) 4.90ms
+[I 161123 18:55:36 web:1946] 304 GET /static/js/jquery.min.js (127.0.0.1) 25.09ms
+[I 161123 18:55:36 web:1946] 200 GET /api/verifycode?pcodeid=&codeid=8b2c69b7-049c-480e-a496-0857d7a473a3 (127.0.0.1) 148.10ms
+[I 161123 18:55:52 web:1946] 200 POST /api/smscode (127.0.0.1) 0.62ms
+[I 161123 18:59:52 autoreload:204] /mnt/hgfs/Desktop/tornado_project/urls.py modified; restarting server
+[I 161123 19:04:42 autoreload:204] /mnt/hgfs/Desktop/tornado_project/handlers/VerifyCode.py modified; restarting server
+[I 161123 19:23:55 autoreload:204] /mnt/hgfs/Desktop/tornado_project/handlers/Passport.py modified; restarting server
+[I 161123 19:37:02 web:1946] 200 GET /register.html (127.0.0.1) 15.69ms
+[I 161123 19:37:02 web:1946] 200 GET /static/js/ihome/register.js (127.0.0.1) 3.69ms
+[I 161123 19:37:02 web:1946] 200 GET /api/verifycode?pcodeid=&codeid=f8c98222-7dfa-4955-bb0a-0ca52cd15db3 (127.0.0.1) 85.66ms
+[E 161123 19:37:26 web:1524] Uncaught exception POST /api/register (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='127.0.0.1:8000', method='POST', uri='/api/register', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Origin': 'http://127.0.0.1:8000', 'Content-Length': '106', 'Accept-Language': 'zh-CN,zh;q=0.8', 'Accept-Encoding': 'gzip, deflate', 'Host': '127.0.0.1:8000', 'Accept': 'application/json, text/javascript, */*; q=0.01', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36', 'Connection': 'keep-alive', 'X-Requested-With': 'XMLHttpRequest', 'Referer': 'http://127.0.0.1:8000/register.html', 'Cookie': 'csrftoken=K1W4Bk10gHHLcKu4W5FtLOYm3hGyiAHp', 'Content-Type': 'application/json'})
+    Traceback (most recent call last):
+      File "/home/python/.virtualenvs/tornado_py2/local/lib/python2.7/site-packages/tornado/web.py", line 1443, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/mnt/hgfs/Desktop/tornado_project/handlers/Passport.py", line 12, in post
+        return self.write(dict(error=RET.DATAERR, errmsg="手机验证码错误！"))
+    NameError: global name 'RET' is not defined
+[E 161123 19:37:26 web:976] Uncaught exception in write_error
+    Traceback (most recent call last):
+      File "/home/python/.virtualenvs/tornado_py2/local/lib/python2.7/site-packages/tornado/web.py", line 974, in send_error
+        self.write_error(status_code, **kwargs)
+    TypeError: write_error() takes exactly 1 argument (3 given)
+[E 161123 19:37:26 web:1946] 500 POST /api/register (127.0.0.1) 7.75ms
+[E 161123 19:38:22 web:1524] Uncaught exception POST /api/register (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='127.0.0.1:8000', method='POST', uri='/api/register', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Origin': 'http://127.0.0.1:8000', 'Content-Length': '106', 'Accept-Language': 'zh-CN,zh;q=0.8', 'Accept-Encoding': 'gzip, deflate', 'Host': '127.0.0.1:8000', 'Accept': 'application/json, text/javascript, */*; q=0.01', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36', 'Connection': 'keep-alive', 'X-Requested-With': 'XMLHttpRequest', 'Referer': 'http://127.0.0.1:8000/register.html', 'Cookie': 'csrftoken=K1W4Bk10gHHLcKu4W5FtLOYm3hGyiAHp', 'Content-Type': 'application/json'})
+    Traceback (most recent call last):
+      File "/home/python/.virtualenvs/tornado_py2/local/lib/python2.7/site-packages/tornado/web.py", line 1443, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/mnt/hgfs/Desktop/tornado_project/handlers/Passport.py", line 12, in post
+        return self.write(dict(error=RET.DATAERR, errmsg="手机验证码错误！"))
+    NameError: global name 'RET' is not defined
+[E 161123 19:38:22 web:976] Uncaught exception in write_error
+    Traceback (most recent call last):
+      File "/home/python/.virtualenvs/tornado_py2/local/lib/python2.7/site-packages/tornado/web.py", line 974, in send_error
+        self.write_error(status_code, **kwargs)
+    TypeError: write_error() takes exactly 1 argument (3 given)
+[E 161123 19:38:22 web:1946] 500 POST /api/register (127.0.0.1) 3.23ms
+[E 161123 19:38:23 web:1524] Uncaught exception POST /api/register (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='127.0.0.1:8000', method='POST', uri='/api/register', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Origin': 'http://127.0.0.1:8000', 'Content-Length': '106', 'Accept-Language': 'zh-CN,zh;q=0.8', 'Accept-Encoding': 'gzip, deflate', 'Host': '127.0.0.1:8000', 'Accept': 'application/json, text/javascript, */*; q=0.01', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36', 'Connection': 'keep-alive', 'X-Requested-With': 'XMLHttpRequest', 'Referer': 'http://127.0.0.1:8000/register.html', 'Cookie': 'csrftoken=K1W4Bk10gHHLcKu4W5FtLOYm3hGyiAHp', 'Content-Type': 'application/json'})
+    Traceback (most recent call last):
+      File "/home/python/.virtualenvs/tornado_py2/local/lib/python2.7/site-packages/tornado/web.py", line 1443, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/mnt/hgfs/Desktop/tornado_project/handlers/Passport.py", line 12, in post
+        passwd_2 = self.json_args.get("passwd_2")
+    NameError: global name 'RET' is not defined
+[E 161123 19:38:23 web:976] Uncaught exception in write_error
+    Traceback (most recent call last):
+      File "/home/python/.virtualenvs/tornado_py2/local/lib/python2.7/site-packages/tornado/web.py", line 974, in send_error
+        self.write_error(status_code, **kwargs)
+    TypeError: write_error() takes exactly 1 argument (3 given)
+[E 161123 19:38:23 web:1946] 500 POST /api/register (127.0.0.1) 4.49ms
+[I 161123 19:38:24 autoreload:204] /mnt/hgfs/Desktop/tornado_project/handlers/Passport.py modified; restarting server
+[I 161123 19:38:25 web:1946] 200 POST /api/register (127.0.0.1) 1.11ms
+[I 161123 19:38:30 web:1946] 200 POST /api/register (127.0.0.1) 0.65ms
+[I 161123 19:38:34 web:1946] 304 GET /register.html (127.0.0.1) 11.55ms
+[I 161123 19:38:34 web:1946] 304 GET /static/js/ihome/register.js (127.0.0.1) 2.88ms
+[I 161123 19:38:35 web:1946] 200 GET /api/verifycode?pcodeid=&codeid=863dd35a-0fce-4357-abf6-05eef6e818bc (127.0.0.1) 77.22ms
+[I 161123 19:39:05 web:1946] 200 POST /api/smscode (127.0.0.1) 20023.19ms
+[I 161123 19:39:05 web:1946] 200 POST /api/register (127.0.0.1) 1.52ms
+[I 161123 19:39:05 web:1946] 200 POST /api/register (127.0.0.1) 4.90ms
+[I 161123 19:39:05 web:1946] 200 POST /api/register (127.0.0.1) 5.38ms
+[I 161123 19:39:13 web:1946] 200 POST /api/register (127.0.0.1) 1.41ms
+[I 161123 19:40:12 autoreload:204] /mnt/hgfs/Desktop/tornado_project/handlers/Passport.py modified; restarting server
+[I 161123 19:41:07 web:1946] 304 GET /register.html (127.0.0.1) 15.89ms
+[I 161123 19:41:08 web:1946] 200 GET /static/js/ihome/register.js (127.0.0.1) 4.93ms
+[I 161123 19:41:09 web:1946] 200 GET /api/verifycode?pcodeid=&codeid=81912456-3c22-4753-9dc2-17094f5a8874 (127.0.0.1) 90.56ms
+[I 161123 19:41:26 web:1946] 200 POST /api/register (127.0.0.1) 0.88ms
+[I 161123 19:41:53 autoreload:204] /mnt/hgfs/Desktop/tornado_project/handlers/Passport.py modified; restarting server
+[I 161123 19:41:54 web:1946] 304 GET /register.html (127.0.0.1) 19.64ms
+[I 161123 19:41:55 web:1946] 304 GET /static/plugins/bootstrap/css/bootstrap.min.css (127.0.0.1) 4.66ms
+[I 161123 19:41:55 web:1946] 304 GET /static/plugins/font-awesome/css/font-awesome.min.css (127.0.0.1) 4.34ms
+[I 161123 19:41:55 web:1946] 304 GET /static/css/reset.css (127.0.0.1) 4.12ms
+[I 161123 19:41:55 web:1946] 304 GET /static/css/ihome/main.css (127.0.0.1) 3.57ms
+[I 161123 19:41:55 web:1946] 304 GET /static/css/ihome/register.css (127.0.0.1) 1.88ms
+[I 161123 19:41:55 web:1946] 304 GET /static/images/logo@128x59.png (127.0.0.1) 4.22ms
+[I 161123 19:41:55 web:1946] 304 GET /static/js/jquery.min.js (127.0.0.1) 8.86ms
+[I 161123 19:41:55 web:1946] 304 GET /static/plugins/bootstrap/js/bootstrap.min.js (127.0.0.1) 4.37ms
+[I 161123 19:41:55 web:1946] 304 GET /static/js/ihome/register.js (127.0.0.1) 3.22ms
+[I 161123 19:41:55 web:1946] 200 GET /api/verifycode?pcodeid=&codeid=4a239fa7-8420-4951-9890-211bde9b6c1e (127.0.0.1) 83.09ms
+[I 161123 19:42:00 web:1946] 200 GET /api/verifycode?pcodeid=4a239fa7-8420-4951-9890-211bde9b6c1e&codeid=25cf4895-ac5d-41c2-8e5c-f42fcb840736 (127.0.0.1) 50.78ms
+[I 161123 19:42:03 web:1946] 200 GET /api/verifycode?pcodeid=25cf4895-ac5d-41c2-8e5c-f42fcb840736&codeid=3235a6ef-51bc-4bbf-a8e6-2ab57f9ec726 (127.0.0.1) 46.79ms
+[I 161123 19:42:05 web:1946] 200 GET /api/verifycode?pcodeid=3235a6ef-51bc-4bbf-a8e6-2ab57f9ec726&codeid=cde96a35-56c3-45e5-9534-a018108932e9 (127.0.0.1) 46.21ms
+[I 161123 19:42:16 web:1946] 200 POST /api/register (127.0.0.1) 1.02ms
+[I 161123 19:42:20 web:1946] 200 POST /api/register (127.0.0.1) 1.04ms
+[I 161123 19:44:12 web:1946] 304 GET /register.html (127.0.0.1) 2.03ms
+[I 161123 19:44:13 web:1946] 200 GET /static/js/ihome/register.js (127.0.0.1) 9.59ms
+[I 161123 19:44:13 web:1946] 200 GET /api/verifycode?pcodeid=&codeid=a2f0256f-7104-46ca-a357-0853fe5b4570 (127.0.0.1) 53.59ms
+[I 161123 19:44:21 web:1946] 200 GET /api/verifycode?pcodeid=a2f0256f-7104-46ca-a357-0853fe5b4570&codeid=0a9323ab-5f29-4965-8071-4e993eb43f48 (127.0.0.1) 49.00ms
+[I 161123 19:44:32 web:1946] 200 POST /api/register (127.0.0.1) 1.21ms
+[I 161123 19:44:36 web:1946] 200 POST /api/register (127.0.0.1) 2.08ms
+[I 161123 19:44:40 web:1946] 200 POST /api/register (127.0.0.1) 0.99ms
+[I 161123 19:44:43 web:1946] 200 POST /api/register (127.0.0.1) 0.64ms
+[I 161123 19:45:09 web:1946] 304 GET /register.html (127.0.0.1) 3.43ms
+[I 161123 19:45:09 web:1946] 200 GET /static/js/ihome/register.js (127.0.0.1) 7.17ms
+[I 161123 19:45:09 web:1946] 200 GET /api/verifycode?pcodeid=&codeid=a75d89a3-ece4-4104-b17a-87456d6ec657 (127.0.0.1) 55.61ms
+[I 161123 19:45:23 web:1946] 200 POST /api/register (127.0.0.1) 1.21ms
+[I 161123 19:46:10 web:1946] 304 GET /register.html (127.0.0.1) 2.01ms
+[I 161123 19:46:10 web:1946] 200 GET /static/js/ihome/register.js (127.0.0.1) 10.49ms
+[I 161123 19:46:10 web:1946] 200 GET /api/verifycode?pcodeid=&codeid=305d3189-4964-42f6-81c3-38dfd2475f4c (127.0.0.1) 55.94ms
+[I 161123 19:46:18 web:1946] 200 GET /api/verifycode?pcodeid=305d3189-4964-42f6-81c3-38dfd2475f4c&codeid=53756bd9-85ae-4b7a-9311-c72e597fe1a7 (127.0.0.1) 49.63ms
+[I 161123 19:46:18 web:1946] 200 GET /api/verifycode?pcodeid=53756bd9-85ae-4b7a-9311-c72e597fe1a7&codeid=7fdf84a6-b4b9-4162-8ed5-faf992696ab4 (127.0.0.1) 55.42ms
+[I 161123 19:46:19 web:1946] 200 GET /api/verifycode?pcodeid=7fdf84a6-b4b9-4162-8ed5-faf992696ab4&codeid=864ce34c-3ab6-4e8b-a6de-6c0527d5e6fb (127.0.0.1) 36.99ms
+[I 161123 19:46:19 web:1946] 200 GET /api/verifycode?pcodeid=864ce34c-3ab6-4e8b-a6de-6c0527d5e6fb&codeid=ab4a3676-f40d-4aa5-b386-c14fed6a1a1f (127.0.0.1) 50.94ms
+[I 161123 19:46:20 web:1946] 200 GET /api/verifycode?pcodeid=ab4a3676-f40d-4aa5-b386-c14fed6a1a1f&codeid=4ac36f5b-c88e-49b3-a35c-b28828ee00a3 (127.0.0.1) 32.17ms
+[I 161123 19:46:20 web:1946] 200 GET /api/verifycode?pcodeid=4ac36f5b-c88e-49b3-a35c-b28828ee00a3&codeid=0ddfe5c5-391c-48b1-8b5b-24320da6c534 (127.0.0.1) 37.43ms
+[I 161123 19:46:21 web:1946] 200 GET /api/verifycode?pcodeid=0ddfe5c5-391c-48b1-8b5b-24320da6c534&codeid=a965b42c-b3ba-4c35-9b55-6a3e5143ab2f (127.0.0.1) 47.69ms
+[I 161123 19:46:22 web:1946] 200 GET /api/verifycode?pcodeid=a965b42c-b3ba-4c35-9b55-6a3e5143ab2f&codeid=6ef176b6-02bb-4ced-bf43-e6eb9807d7f0 (127.0.0.1) 43.43ms
+[I 161123 19:46:22 web:1946] 200 GET /api/verifycode?pcodeid=6ef176b6-02bb-4ced-bf43-e6eb9807d7f0&codeid=81a1edf2-03ea-4eda-ac73-115d5d6ad404 (127.0.0.1) 52.16ms
+[I 161123 19:46:23 web:1946] 200 GET /api/verifycode?pcodeid=81a1edf2-03ea-4eda-ac73-115d5d6ad404&codeid=f244154d-097b-451e-a954-60198aed94e3 (127.0.0.1) 40.26ms
+[I 161123 19:46:23 web:1946] 200 GET /api/verifycode?pcodeid=f244154d-097b-451e-a954-60198aed94e3&codeid=854c9f7e-6409-457c-8e0a-f7f73455b400 (127.0.0.1) 48.75ms
+[I 161123 19:46:24 web:1946] 200 GET /api/verifycode?pcodeid=854c9f7e-6409-457c-8e0a-f7f73455b400&codeid=b93c21ed-606b-4ea1-b272-5374a644283f (127.0.0.1) 47.28ms
+[I 161123 19:46:25 web:1946] 200 GET /api/verifycode?pcodeid=b93c21ed-606b-4ea1-b272-5374a644283f&codeid=26af5e4f-c8b0-44b2-bbe6-6c9d108ad6f0 (127.0.0.1) 41.35ms
+[I 161123 19:46:26 web:1946] 200 GET /api/verifycode?pcodeid=26af5e4f-c8b0-44b2-bbe6-6c9d108ad6f0&codeid=04041f2a-0de2-4dda-9b79-cca51f453e8a (127.0.0.1) 56.35ms
+[I 161123 19:46:26 web:1946] 200 GET /api/verifycode?pcodeid=04041f2a-0de2-4dda-9b79-cca51f453e8a&codeid=a84ccc23-d7c2-41ae-83ac-4746acfb6afb (127.0.0.1) 48.64ms
+[I 161123 19:46:36 web:1946] 200 POST /api/register (127.0.0.1) 0.78ms
+[I 161123 19:47:23 web:1946] 200 POST /api/register (127.0.0.1) 5.66ms
+[I 161123 19:47:26 web:1946] 200 POST /api/register (127.0.0.1) 2.68ms
+[I 161123 19:47:29 web:1946] 304 GET /register.html (127.0.0.1) 5.08ms
+[I 161123 19:47:29 web:1946] 200 GET /static/js/ihome/register.js (127.0.0.1) 7.09ms
+[I 161123 19:47:30 web:1946] 200 GET /api/verifycode?pcodeid=&codeid=7a23a319-6605-4b87-9585-5c1c6f690173 (127.0.0.1) 61.14ms
+[I 161123 19:47:34 web:1946] 200 GET /api/verifycode?pcodeid=7a23a319-6605-4b87-9585-5c1c6f690173&codeid=a478afdf-a78f-4fb3-9df2-82cb6e3b6cfd (127.0.0.1) 56.93ms
+[I 161123 19:47:42 web:1946] 200 POST /api/register (127.0.0.1) 3.24ms
+[I 161123 19:48:05 web:1946] 304 GET /register.html (127.0.0.1) 2.06ms
+[I 161123 19:48:05 web:1946] 304 GET /static/js/ihome/register.js (127.0.0.1) 2.93ms
+[I 161123 19:48:06 web:1946] 200 GET /api/verifycode?pcodeid=&codeid=89fffca4-9f60-4ef0-849b-ef65b9919af8 (127.0.0.1) 46.13ms
+[I 161123 19:48:08 autoreload:204] /mnt/hgfs/Desktop/tornado_project/handlers/Passport.py modified; restarting server
+[I 161123 19:48:18 web:1946] 200 POST /api/register (127.0.0.1) 4.66ms
+[I 161123 19:48:18 web:1946] 200 GET /login.html (127.0.0.1) 31.94ms
+[I 161123 19:48:18 web:1946] 200 GET /static/css/ihome/login.css (127.0.0.1) 41.46ms
+[I 161123 19:48:18 web:1946] 200 GET /static/js/ihome/login.js (127.0.0.1) 68.40ms
+[I 161123 19:48:42 web:1946] 304 GET /static/js/ihome/register.js (127.0.0.1) 2.53ms
+[I 161123 19:48:43 web:1946] 200 GET /api/verifycode?pcodeid=&codeid=e2c195b2-ca82-4439-8865-ce9357624ef6 (127.0.0.1) 108.78ms
+[I 161123 19:50:35 autoreload:204] /mnt/hgfs/Desktop/tornado_project/handlers/Passport.py modified; restarting server
+[I 161123 19:50:53 autoreload:204] /mnt/hgfs/Desktop/tornado_project/handlers/Passport.py modified; restarting server
+[I 161123 19:51:11 autoreload:204] /mnt/hgfs/Desktop/tornado_project/handlers/Passport.py modified; restarting server
+[I 161123 19:51:15 web:1946] 304 GET /register.html (127.0.0.1) 14.84ms
+[I 161123 19:51:15 web:1946] 304 GET /static/js/ihome/register.js (127.0.0.1) 3.02ms
+[I 161123 19:51:16 web:1946] 200 GET /api/verifycode?pcodeid=&codeid=1ffde99f-7c2e-4ae9-8cc6-30889966d0c1 (127.0.0.1) 79.00ms
+[I 161123 19:51:23 web:1946] 200 POST /api/smscode (127.0.0.1) 1.18ms
+[I 161123 19:51:23 web:1946] 200 GET /api/verifycode?pcodeid=1ffde99f-7c2e-4ae9-8cc6-30889966d0c1&codeid=80c0cee8-e46a-496c-b2cb-a4493c317902 (127.0.0.1) 47.60ms
+[I 161123 19:51:32 web:1946] 200 POST /api/register (127.0.0.1) 1.21ms
+[I 161123 19:55:19 web:1946] 304 GET /register.html (127.0.0.1) 2.54ms
+[I 161123 19:55:19 web:1946] 304 GET /static/js/ihome/register.js (127.0.0.1) 2.90ms
+[I 161123 19:55:19 web:1946] 200 GET /api/verifycode?pcodeid=&codeid=9b283589-6ebc-42b3-b629-0e2873318220 (127.0.0.1) 46.03ms
+[I 161123 19:55:45 web:1946] 200 POST /api/smscode (127.0.0.1) 612.54ms
+[I 161123 19:56:01 web:1946] 304 GET /register.html (127.0.0.1) 1.98ms
+[I 161123 19:56:01 web:1946] 200 GET /api/verifycode?pcodeid=&codeid=8125d41d-0923-40a8-abe3-ba82c6e1db7a (127.0.0.1) 62.62ms
+[I 161123 19:56:08 web:1946] 200 POST /api/smscode (127.0.0.1) 0.89ms
+[I 161123 19:56:08 web:1946] 200 GET /api/verifycode?pcodeid=8125d41d-0923-40a8-abe3-ba82c6e1db7a&codeid=d449a627-2a1b-4c8a-923a-be4e7a622e0b (127.0.0.1) 45.00ms
+[I 161123 19:56:52 web:1946] 200 POST /api/smscode (127.0.0.1) 0.92ms
+[I 161123 19:56:52 web:1946] 200 GET /api/verifycode?pcodeid=d449a627-2a1b-4c8a-923a-be4e7a622e0b&codeid=db208678-18b9-4c62-9428-63d8e187bbc7 (127.0.0.1) 43.61ms
+[I 161123 19:58:03 web:1946] 304 GET /register.html (127.0.0.1) 2.26ms
+[I 161123 19:58:03 web:1946] 304 GET /static/js/ihome/register.js (127.0.0.1) 9.35ms
+[I 161123 19:58:04 web:1946] 200 GET /api/verifycode?pcodeid=&codeid=a034dcda-7caf-47a4-a468-7e9ec1cee667 (127.0.0.1) 48.03ms
+[I 161123 19:58:19 web:1946] 200 POST /api/register (127.0.0.1) 1.36ms
+[I 161123 20:00:32 autoreload:204] /mnt/hgfs/Desktop/tornado_project/handlers/Passport.py modified; restarting server
+[I 161123 20:01:02 autoreload:204] /mnt/hgfs/Desktop/tornado_project/handlers/Passport.py modified; restarting server
+[I 161123 20:16:44 web:1946] 304 GET /register.html (127.0.0.1) 19.60ms
+[I 161123 20:16:44 web:1946] 200 GET /static/js/ihome/register.js (127.0.0.1) 9.07ms
+[I 161123 20:16:44 web:1946] 200 GET /api/verifycode?pcodeid=&codeid=764198f1-687a-437d-872b-7ec63c2a7af8 (127.0.0.1) 77.59ms
+[I 161123 20:17:02 web:1946] 200 POST /api/register (127.0.0.1) 54.30ms
+[I 161123 20:18:09 web:1946] 304 GET /login.html (127.0.0.1) 3.02ms
+[I 161123 20:18:16 web:1946] 304 GET /static/js/ihome/register.js (127.0.0.1) 2.47ms
+[I 161123 20:18:16 web:1946] 200 GET /api/verifycode?pcodeid=&codeid=0dcdeeb8-bc76-48ea-8433-73cd156008b2 (127.0.0.1) 46.05ms
+[I 161123 20:18:29 web:1946] 200 POST /api/register (127.0.0.1) 0.63ms
+[I 161123 20:18:40 web:1946] 200 GET /api/verifycode?pcodeid=0dcdeeb8-bc76-48ea-8433-73cd156008b2&codeid=e5255240-eab8-4144-85af-bc83ac98fb48 (127.0.0.1) 50.32ms
+[I 161123 20:18:43 web:1946] 200 POST /api/register (127.0.0.1) 1.53ms
+[I 161123 20:21:17 autoreload:204] /mnt/hgfs/Desktop/tornado_project/handlers/Passport.py modified; restarting server
+[I 161125 17:16:55 web:1946] 200 GET / (192.168.150.1) 57.97ms
+[I 161125 17:16:55 web:1946] 200 GET /static/plugins/bootstrap/css/bootstrap.min.css (192.168.150.1) 63.64ms
+[I 161125 17:16:55 web:1946] 200 GET /static/css/reset.css (192.168.150.1) 5.47ms
+[I 161125 17:16:55 web:1946] 200 GET /static/plugins/swiper/css/swiper.min.css (192.168.150.1) 54.32ms
+[I 161125 17:16:55 web:1946] 200 GET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css (192.168.150.1) 19.09ms
+[I 161125 17:16:55 web:1946] 200 GET /static/css/ihome/main.css (192.168.150.1) 4.49ms
+[I 161125 17:16:55 web:1946] 200 GET /static/plugins/font-awesome/css/font-awesome.min.css (192.168.150.1) 31.76ms
+[I 161125 17:16:55 web:1946] 200 GET /static/js/jquery.min.js (192.168.150.1) 23.71ms
+[I 161125 17:16:55 web:1946] 200 GET /static/css/ihome/index.css (192.168.150.1) 28.39ms
+[I 161125 17:16:55 web:1946] 200 GET /static/plugins/bootstrap/js/bootstrap.min.js (192.168.150.1) 28.77ms
+[I 161125 17:16:56 web:1946] 200 GET /static/plugins/swiper/js/swiper.jquery.min.js (192.168.150.1) 41.53ms
+[I 161125 17:16:56 web:1946] 200 GET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js (192.168.150.1) 27.35ms
+[I 161125 17:16:56 web:1946] 200 GET /static/images/logo@128x59.png (192.168.150.1) 16.86ms
+[I 161125 17:16:56 web:1946] 200 GET /static/js/ihome/index.js (192.168.150.1) 16.79ms
+[I 161125 17:16:56 web:1946] 200 GET /static/js/template.js (192.168.150.1) 10.82ms
+[I 161125 17:16:56 web:1946] 200 GET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js (192.168.150.1) 44.75ms
+[I 161125 17:16:56 web:1946] 200 GET /static/images/home01.jpg (192.168.150.1) 45.40ms
+[I 161125 17:16:56 web:1946] 200 GET /static/plugins/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.3 (192.168.150.1) 29.32ms
+[I 161125 17:16:56 web:1946] 200 GET /static/images/home02.jpg (192.168.150.1) 36.15ms
+[I 161125 17:16:56 web:1946] 200 GET /static/images/home03.jpg (192.168.150.1) 76.79ms
+[I 161125 17:16:56 web:1946] 200 GET /favicon.ico (192.168.150.1) 24.97ms
+[W 161125 17:17:08 web:1946] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (192.168.150.1) 88.83ms
+[I 161125 17:17:08 web:1946] 200 GET /static/plugins/bootstrap/css/bootstrap.min.css.map (192.168.150.1) 71.60ms
+[I 161125 17:17:16 web:1946] 200 GET /register.html (192.168.150.1) 22.65ms
+[I 161125 17:17:16 web:1946] 200 GET /static/css/ihome/register.css (192.168.150.1) 21.22ms
+[I 161125 17:17:16 web:1946] 200 GET /static/js/ihome/register.js (192.168.150.1) 3.65ms
+[E 161125 17:17:16 VerifyCode:33] Error 111 connecting to 127.0.0.1:6379. Connection refused.
+[I 161125 17:17:16 web:1946] 200 GET /api/verifycode?pcodeid=&codeid=87531ef2-3f0d-41fd-b6c0-d0ec9e74f342 (192.168.150.1) 271.95ms
+[E 161125 17:17:25 VerifyCode:24] Error 111 connecting to 127.0.0.1:6379. Connection refused.
+[E 161125 17:17:25 VerifyCode:33] Error 111 connecting to 127.0.0.1:6379. Connection refused.
+[I 161125 17:17:25 web:1946] 200 GET /api/verifycode?pcodeid=87531ef2-3f0d-41fd-b6c0-d0ec9e74f342&codeid=0d99e5e2-9393-4120-92b5-659ad69ac370 (192.168.150.1) 31.36ms
+[E 161125 17:17:26 VerifyCode:24] Error 111 connecting to 127.0.0.1:6379. Connection refused.
+[E 161125 17:17:26 VerifyCode:33] Error 111 connecting to 127.0.0.1:6379. Connection refused.
+[I 161125 17:17:26 web:1946] 200 GET /api/verifycode?pcodeid=0d99e5e2-9393-4120-92b5-659ad69ac370&codeid=f9086b13-374a-4f79-ad46-685daaa57e5e (192.168.150.1) 35.32ms
+[E 161125 17:17:26 VerifyCode:24] Error 111 connecting to 127.0.0.1:6379. Connection refused.
+[E 161125 17:17:26 VerifyCode:33] Error 111 connecting to 127.0.0.1:6379. Connection refused.
+[I 161125 17:17:26 web:1946] 200 GET /api/verifycode?pcodeid=f9086b13-374a-4f79-ad46-685daaa57e5e&codeid=36592185-6fb3-4bce-a76e-d28956eb2c1f (192.168.150.1) 36.14ms
+[E 161125 17:17:26 VerifyCode:24] Error 111 connecting to 127.0.0.1:6379. Connection refused.
+[E 161125 17:17:26 VerifyCode:33] Error 111 connecting to 127.0.0.1:6379. Connection refused.
+[I 161125 17:17:26 web:1946] 200 GET /api/verifycode?pcodeid=36592185-6fb3-4bce-a76e-d28956eb2c1f&codeid=7a151496-fd71-47c5-9f92-374667cb6cc7 (192.168.150.1) 29.40ms
+[E 161125 17:17:26 VerifyCode:24] Error 111 connecting to 127.0.0.1:6379. Connection refused.
+[E 161125 17:17:26 VerifyCode:33] Error 111 connecting to 127.0.0.1:6379. Connection refused.
+[I 161125 17:17:26 web:1946] 200 GET /api/verifycode?pcodeid=7a151496-fd71-47c5-9f92-374667cb6cc7&codeid=45769353-3302-4a8c-a089-24415e3692dd (192.168.150.1) 28.14ms
+[E 161125 17:17:26 VerifyCode:24] Error 111 connecting to 127.0.0.1:6379. Connection refused.
+[E 161125 17:17:26 VerifyCode:33] Error 111 connecting to 127.0.0.1:6379. Connection refused.
+[I 161125 17:17:26 web:1946] 200 GET /api/verifycode?pcodeid=45769353-3302-4a8c-a089-24415e3692dd&codeid=bccdcfa4-beca-4761-ac4b-5c6d02f429f5 (192.168.150.1) 24.48ms
+[E 161125 17:17:26 VerifyCode:24] Error 111 connecting to 127.0.0.1:6379. Connection refused.
+[E 161125 17:17:26 VerifyCode:33] Error 111 connecting to 127.0.0.1:6379. Connection refused.
+[I 161125 17:17:26 web:1946] 200 GET /api/verifycode?pcodeid=bccdcfa4-beca-4761-ac4b-5c6d02f429f5&codeid=2a675ef4-ee18-453f-bae2-70f32cdcae03 (192.168.150.1) 25.57ms
+[E 161125 17:17:32 VerifyCode:55] Error 111 connecting to 127.0.0.1:6379. Connection refused.
+[I 161125 17:17:32 web:1946] 200 POST /api/smscode (192.168.150.1) 6.26ms
+[E 161125 17:17:32 VerifyCode:24] Error 111 connecting to 127.0.0.1:6379. Connection refused.
+[E 161125 17:17:32 VerifyCode:33] Error 111 connecting to 127.0.0.1:6379. Connection refused.
+[I 161125 17:17:32 web:1946] 200 GET /api/verifycode?pcodeid=2a675ef4-ee18-453f-bae2-70f32cdcae03&codeid=44997e75-b4a6-4845-881a-97942fa04f31 (192.168.150.1) 27.75ms
+[E 161125 17:17:35 VerifyCode:24] Error 111 connecting to 127.0.0.1:6379. Connection refused.
+[E 161125 17:17:35 VerifyCode:33] Error 111 connecting to 127.0.0.1:6379. Connection refused.
+[I 161125 17:17:35 web:1946] 200 GET /api/verifycode?pcodeid=44997e75-b4a6-4845-881a-97942fa04f31&codeid=47171efa-d9a6-48dc-ac81-396acf4e8a66 (192.168.150.1) 22.19ms
+[E 161125 17:17:35 VerifyCode:24] Error 111 connecting to 127.0.0.1:6379. Connection refused.
+[E 161125 17:17:35 VerifyCode:33] Error 111 connecting to 127.0.0.1:6379. Connection refused.
+[I 161125 17:17:35 web:1946] 200 GET /api/verifycode?pcodeid=47171efa-d9a6-48dc-ac81-396acf4e8a66&codeid=9a9a38b7-af3f-4e87-ae9c-3fb5886be489 (192.168.150.1) 27.64ms
+[E 161125 17:17:35 VerifyCode:24] Error 111 connecting to 127.0.0.1:6379. Connection refused.
+[E 161125 17:17:35 VerifyCode:33] Error 111 connecting to 127.0.0.1:6379. Connection refused.
+[I 161125 17:17:35 web:1946] 200 GET /api/verifycode?pcodeid=9a9a38b7-af3f-4e87-ae9c-3fb5886be489&codeid=b13d409a-9093-449e-8ddb-ef9c3bedaf09 (192.168.150.1) 31.08ms
+[E 161125 17:17:40 VerifyCode:33] Error 111 connecting to 127.0.0.1:6379. Connection refused.
+[I 161125 17:17:40 web:1946] 304 GET /api/verifycode?pcodeid=&codeid=87531ef2-3f0d-41fd-b6c0-d0ec9e74f342 (192.168.150.1) 48.78ms
+[I 161125 17:17:42 web:1946] 304 GET /register.html (192.168.150.1) 6.88ms
+[I 161125 17:17:42 web:1946] 304 GET /static/plugins/bootstrap/css/bootstrap.min.css (192.168.150.1) 8.36ms
+[I 161125 17:17:42 web:1946] 304 GET /static/css/reset.css (192.168.150.1) 12.33ms
+[I 161125 17:17:42 web:1946] 304 GET /static/css/ihome/main.css (192.168.150.1) 4.65ms
+[I 161125 17:17:42 web:1946] 304 GET /static/css/ihome/register.css (192.168.150.1) 8.35ms
+[I 161125 17:17:42 web:1946] 304 GET /static/js/jquery.min.js (192.168.150.1) 5.26ms
+[I 161125 17:17:42 web:1946] 304 GET /static/plugins/font-awesome/css/font-awesome.min.css (192.168.150.1) 4.55ms
+[I 161125 17:17:42 web:1946] 304 GET /static/plugins/bootstrap/js/bootstrap.min.js (192.168.150.1) 5.90ms
+[I 161125 17:17:42 web:1946] 304 GET /static/images/logo@128x59.png (192.168.150.1) 8.57ms
+[I 161125 17:17:42 web:1946] 304 GET /static/js/ihome/register.js (192.168.150.1) 3.22ms
+[I 161125 17:17:43 web:1946] 304 GET /static/plugins/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.3 (192.168.150.1) 4.93ms
+[E 161125 17:17:43 VerifyCode:33] Error 111 connecting to 127.0.0.1:6379. Connection refused.
+[I 161125 17:17:43 web:1946] 200 GET /api/verifycode?pcodeid=&codeid=dd60b4cf-9131-4110-8d79-938b3c412335 (192.168.150.1) 33.37ms
+[E 161125 17:17:45 VerifyCode:24] Error 111 connecting to 127.0.0.1:6379. Connection refused.
+[E 161125 17:17:45 VerifyCode:33] Error 111 connecting to 127.0.0.1:6379. Connection refused.
+[I 161125 17:17:45 web:1946] 200 GET /api/verifycode?pcodeid=dd60b4cf-9131-4110-8d79-938b3c412335&codeid=55def71f-8dc2-4ec9-a1ce-f3c2eebc86ce (192.168.150.1) 36.89ms
+[E 161125 17:17:46 VerifyCode:24] Error 111 connecting to 127.0.0.1:6379. Connection refused.
+[E 161125 17:17:46 VerifyCode:33] Error 111 connecting to 127.0.0.1:6379. Connection refused.
+[I 161125 17:17:46 web:1946] 200 GET /api/verifycode?pcodeid=55def71f-8dc2-4ec9-a1ce-f3c2eebc86ce&codeid=f9b54963-5380-410d-84ce-0586729540f7 (192.168.150.1) 26.72ms
+[E 161125 17:17:46 VerifyCode:24] Error 111 connecting to 127.0.0.1:6379. Connection refused.
+[E 161125 17:17:46 VerifyCode:33] Error 111 connecting to 127.0.0.1:6379. Connection refused.
+[I 161125 17:17:46 web:1946] 200 GET /api/verifycode?pcodeid=f9b54963-5380-410d-84ce-0586729540f7&codeid=db8ccceb-ac1a-47e5-882b-cbaa6cba3baf (192.168.150.1) 33.31ms
+[E 161125 17:17:47 VerifyCode:24] Error 111 connecting to 127.0.0.1:6379. Connection refused.
+[E 161125 17:17:47 VerifyCode:33] Error 111 connecting to 127.0.0.1:6379. Connection refused.
+[I 161125 17:17:47 web:1946] 200 GET /api/verifycode?pcodeid=db8ccceb-ac1a-47e5-882b-cbaa6cba3baf&codeid=5a057d40-c4e3-4659-93f3-925081ed388a (192.168.150.1) 36.55ms
+[E 161125 17:17:47 VerifyCode:24] Error 111 connecting to 127.0.0.1:6379. Connection refused.
+[E 161125 17:17:47 VerifyCode:33] Error 111 connecting to 127.0.0.1:6379. Connection refused.
+[I 161125 17:17:47 web:1946] 200 GET /api/verifycode?pcodeid=5a057d40-c4e3-4659-93f3-925081ed388a&codeid=48540853-b114-46b3-a09a-523714ae9c6f (192.168.150.1) 24.04ms
+[E 161125 17:17:47 VerifyCode:24] Error 111 connecting to 127.0.0.1:6379. Connection refused.
+[E 161125 17:17:47 VerifyCode:33] Error 111 connecting to 127.0.0.1:6379. Connection refused.
+[I 161125 17:17:47 web:1946] 200 GET /api/verifycode?pcodeid=48540853-b114-46b3-a09a-523714ae9c6f&codeid=b1bbb59e-1dd5-442c-8055-fa58ca4946be (192.168.150.1) 39.55ms
+[E 161125 17:17:48 VerifyCode:24] Error 111 connecting to 127.0.0.1:6379. Connection refused.
+[E 161125 17:17:48 VerifyCode:33] Error 111 connecting to 127.0.0.1:6379. Connection refused.
+[I 161125 17:17:48 web:1946] 304 GET /api/verifycode?pcodeid=48540853-b114-46b3-a09a-523714ae9c6f&codeid=b1bbb59e-1dd5-442c-8055-fa58ca4946be (192.168.150.1) 56.27ms
+[E 161125 17:17:48 VerifyCode:24] Error 111 connecting to 127.0.0.1:6379. Connection refused.
+[E 161125 17:17:49 VerifyCode:33] Error 111 connecting to 127.0.0.1:6379. Connection refused.
+[I 161125 17:17:49 web:1946] 304 GET /api/verifycode?pcodeid=dd60b4cf-9131-4110-8d79-938b3c412335&codeid=55def71f-8dc2-4ec9-a1ce-f3c2eebc86ce (192.168.150.1) 24.11ms
+[E 161125 17:17:49 VerifyCode:24] Error 111 connecting to 127.0.0.1:6379. Connection refused.
+[E 161125 17:17:49 VerifyCode:33] Error 111 connecting to 127.0.0.1:6379. Connection refused.
+[I 161125 17:17:49 web:1946] 304 GET /api/verifycode?pcodeid=55def71f-8dc2-4ec9-a1ce-f3c2eebc86ce&codeid=f9b54963-5380-410d-84ce-0586729540f7 (192.168.150.1) 34.52ms
+[E 161125 17:17:49 VerifyCode:24] Error 111 connecting to 127.0.0.1:6379. Connection refused.
+[E 161125 17:17:49 VerifyCode:33] Error 111 connecting to 127.0.0.1:6379. Connection refused.
+[I 161125 17:17:49 web:1946] 304 GET /api/verifycode?pcodeid=f9b54963-5380-410d-84ce-0586729540f7&codeid=db8ccceb-ac1a-47e5-882b-cbaa6cba3baf (192.168.150.1) 30.94ms
+[E 161125 17:17:49 VerifyCode:24] Error 111 connecting to 127.0.0.1:6379. Connection refused.
+[E 161125 17:17:49 VerifyCode:33] Error 111 connecting to 127.0.0.1:6379. Connection refused.
+[I 161125 17:17:49 web:1946] 304 GET /api/verifycode?pcodeid=db8ccceb-ac1a-47e5-882b-cbaa6cba3baf&codeid=5a057d40-c4e3-4659-93f3-925081ed388a (192.168.150.1) 31.54ms
+[E 161125 17:17:49 VerifyCode:24] Error 111 connecting to 127.0.0.1:6379. Connection refused.
+[E 161125 17:17:49 VerifyCode:33] Error 111 connecting to 127.0.0.1:6379. Connection refused.
+[I 161125 17:17:49 web:1946] 304 GET /api/verifycode?pcodeid=5a057d40-c4e3-4659-93f3-925081ed388a&codeid=48540853-b114-46b3-a09a-523714ae9c6f (192.168.150.1) 27.77ms
+[E 161125 17:17:49 VerifyCode:33] Error 111 connecting to 127.0.0.1:6379. Connection refused.
+[I 161125 17:17:49 web:1946] 304 GET /api/verifycode?pcodeid=&codeid=dd60b4cf-9131-4110-8d79-938b3c412335 (192.168.150.1) 22.86ms
+[I 161125 17:18:42 web:1946] 304 GET /register.html (192.168.150.1) 4.18ms
+[I 161125 17:18:42 web:1946] 304 GET /static/plugins/bootstrap/css/bootstrap.min.css (192.168.150.1) 6.69ms
+[I 161125 17:18:42 web:1946] 304 GET /static/js/jquery.min.js (192.168.150.1) 4.63ms
+[I 161125 17:18:42 web:1946] 304 GET /static/plugins/font-awesome/css/font-awesome.min.css (192.168.150.1) 4.30ms
+[I 161125 17:18:42 web:1946] 304 GET /static/css/reset.css (192.168.150.1) 3.51ms
+[I 161125 17:18:42 web:1946] 304 GET /static/css/ihome/main.css (192.168.150.1) 5.39ms
+[I 161125 17:18:42 web:1946] 304 GET /static/css/ihome/register.css (192.168.150.1) 6.30ms
+[I 161125 17:18:42 web:1946] 304 GET /static/images/logo@128x59.png (192.168.150.1) 9.47ms
+[I 161125 17:18:42 web:1946] 304 GET /static/js/ihome/register.js (192.168.150.1) 8.87ms
+[I 161125 17:18:42 web:1946] 304 GET /static/plugins/bootstrap/js/bootstrap.min.js (192.168.150.1) 6.04ms
+[I 161125 17:18:42 web:1946] 304 GET /static/plugins/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.3 (192.168.150.1) 4.21ms
+[E 161125 17:18:43 VerifyCode:33] Error 111 connecting to 127.0.0.1:6379. Connection refused.
+[I 161125 17:18:43 web:1946] 200 GET /api/verifycode?pcodeid=&codeid=f47ce12b-e667-4d13-9d71-9bcbe7190a6b (192.168.150.1) 65.42ms
+[E 161125 17:19:00 VerifyCode:24] Error 111 connecting to 127.0.0.1:6379. Connection refused.
+[E 161125 17:19:00 VerifyCode:33] Error 111 connecting to 127.0.0.1:6379. Connection refused.
+[I 161125 17:19:00 web:1946] 200 GET /api/verifycode?pcodeid=f47ce12b-e667-4d13-9d71-9bcbe7190a6b&codeid=4f702f36-49b4-4256-bd81-dfa21c97e4a2 (192.168.150.1) 27.75ms
+[E 161125 17:19:07 VerifyCode:24] Error 111 connecting to 127.0.0.1:6379. Connection refused.
+[E 161125 17:19:07 VerifyCode:33] Error 111 connecting to 127.0.0.1:6379. Connection refused.
+[I 161125 17:19:07 web:1946] 200 GET /api/verifycode?pcodeid=4f702f36-49b4-4256-bd81-dfa21c97e4a2&codeid=6241e950-4e41-40fa-a8b8-dbb1134caf21 (192.168.150.1) 27.15ms
+[E 161125 17:19:08 VerifyCode:24] Error 111 connecting to 127.0.0.1:6379. Connection refused.
+[E 161125 17:19:08 VerifyCode:33] Error 111 connecting to 127.0.0.1:6379. Connection refused.
+[I 161125 17:19:08 web:1946] 200 GET /api/verifycode?pcodeid=6241e950-4e41-40fa-a8b8-dbb1134caf21&codeid=e3cca349-e5a7-454c-8a5d-947a505bf6c9 (192.168.150.1) 52.43ms
+[E 161125 17:19:09 VerifyCode:24] Error 111 connecting to 127.0.0.1:6379. Connection refused.
+[E 161125 17:19:09 VerifyCode:33] Error 111 connecting to 127.0.0.1:6379. Connection refused.
+[I 161125 17:19:09 web:1946] 200 GET /api/verifycode?pcodeid=e3cca349-e5a7-454c-8a5d-947a505bf6c9&codeid=5ae6f656-7b5a-471a-b627-87d173cab496 (192.168.150.1) 32.54ms
+[E 161125 17:19:10 VerifyCode:24] Error 111 connecting to 127.0.0.1:6379. Connection refused.
+[E 161125 17:19:10 VerifyCode:33] Error 111 connecting to 127.0.0.1:6379. Connection refused.
+[I 161125 17:19:10 web:1946] 200 GET /api/verifycode?pcodeid=5ae6f656-7b5a-471a-b627-87d173cab496&codeid=c665d37b-17ef-4a8f-9c86-a51bc8e3e61b (192.168.150.1) 42.47ms
+[E 161125 17:19:11 VerifyCode:24] Error 111 connecting to 127.0.0.1:6379. Connection refused.
+[E 161125 17:19:11 VerifyCode:33] Error 111 connecting to 127.0.0.1:6379. Connection refused.
+[I 161125 17:19:11 web:1946] 200 GET /api/verifycode?pcodeid=c665d37b-17ef-4a8f-9c86-a51bc8e3e61b&codeid=feb5ca1a-ed37-4d72-81bf-302f9b5e6755 (192.168.150.1) 22.15ms
+[I 161125 17:19:24 web:1946] 200 GET / (127.0.0.1) 7.36ms
+[I 161125 17:19:24 web:1946] 304 GET /static/plugins/bootstrap/css/bootstrap.min.css (127.0.0.1) 3.79ms
+[I 161125 17:19:24 web:1946] 304 GET /static/css/reset.css (127.0.0.1) 2.03ms
+[I 161125 17:19:24 web:1946] 200 GET /static/plugins/swiper/css/swiper.min.css (127.0.0.1) 4.51ms
+[I 161125 17:19:24 web:1946] 200 GET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css (127.0.0.1) 5.18ms
+[I 161125 17:19:24 web:1946] 304 GET /static/css/ihome/main.css (127.0.0.1) 3.65ms
+[I 161125 17:19:24 web:1946] 200 GET /static/css/ihome/index.css (127.0.0.1) 4.34ms
+[I 161125 17:19:24 web:1946] 304 GET /static/js/jquery.min.js (127.0.0.1) 4.79ms
+[I 161125 17:19:24 web:1946] 304 GET /static/plugins/font-awesome/css/font-awesome.min.css (127.0.0.1) 6.80ms
+[I 161125 17:19:24 web:1946] 304 GET /static/plugins/bootstrap/js/bootstrap.min.js (127.0.0.1) 2.98ms
+[I 161125 17:19:24 web:1946] 200 GET /static/plugins/swiper/js/swiper.jquery.min.js (127.0.0.1) 9.00ms
+[I 161125 17:19:24 web:1946] 200 GET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js (127.0.0.1) 2.99ms
+[I 161125 17:19:24 web:1946] 200 GET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js (127.0.0.1) 2.75ms
+[I 161125 17:19:24 web:1946] 200 GET /static/js/template.js (127.0.0.1) 7.40ms
+[I 161125 17:19:24 web:1946] 200 GET /static/js/ihome/index.js (127.0.0.1) 5.84ms
+[I 161125 17:19:25 web:1946] 304 GET /static/images/logo@128x59.png (127.0.0.1) 2.69ms
+[I 161125 17:19:25 web:1946] 200 GET /static/images/home01.jpg (127.0.0.1) 15.23ms
+[I 161125 17:19:25 web:1946] 200 GET /static/images/home02.jpg (127.0.0.1) 18.21ms
+[I 161125 17:19:25 web:1946] 200 GET /static/images/home03.jpg (127.0.0.1) 12.62ms
+[I 161125 17:19:26 web:1946] 200 GET /favicon.ico (127.0.0.1) 3.55ms
+[W 161125 17:19:29 web:1946] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (127.0.0.1) 2.80ms
+[I 161125 17:19:29 web:1946] 304 GET /static/plugins/bootstrap/css/bootstrap.min.css.map (127.0.0.1) 11.89ms
+[I 161125 17:19:42 web:1946] 304 GET /login.html (127.0.0.1) 102.86ms
+[I 161125 17:19:43 web:1946] 304 GET /static/css/ihome/login.css (127.0.0.1) 34.92ms
+[I 161125 17:19:43 web:1946] 200 GET /static/js/ihome/login.js (127.0.0.1) 2.86ms
+[I 161125 17:19:45 web:1946] 304 GET /register.html (127.0.0.1) 2.36ms
+[I 161125 17:19:45 web:1946] 304 GET /static/css/ihome/register.css (127.0.0.1) 1.92ms
+[I 161125 17:19:45 web:1946] 304 GET /static/js/ihome/register.js (127.0.0.1) 1.97ms
+[E 161125 17:19:46 VerifyCode:33] Error 111 connecting to 127.0.0.1:6379. Connection refused.
+[I 161125 17:19:46 web:1946] 200 GET /api/verifycode?pcodeid=&codeid=26d8ff51-8901-4ed3-ae42-0bd62db47fee (127.0.0.1) 56.57ms
+[E 161125 17:19:48 VerifyCode:24] Error 111 connecting to 127.0.0.1:6379. Connection refused.
+[E 161125 17:19:48 VerifyCode:33] Error 111 connecting to 127.0.0.1:6379. Connection refused.
+[I 161125 17:19:48 web:1946] 200 GET /api/verifycode?pcodeid=26d8ff51-8901-4ed3-ae42-0bd62db47fee&codeid=69282570-72b3-4322-9097-2c46dcd3c851 (127.0.0.1) 124.94ms
+[E 161125 17:19:48 VerifyCode:24] Error 111 connecting to 127.0.0.1:6379. Connection refused.
+[E 161125 17:19:49 VerifyCode:33] Error 111 connecting to 127.0.0.1:6379. Connection refused.
+[I 161125 17:19:49 web:1946] 200 GET /api/verifycode?pcodeid=69282570-72b3-4322-9097-2c46dcd3c851&codeid=c133a962-ecde-48af-a8d0-7c55f55be2ec (127.0.0.1) 60.96ms
+[E 161125 17:19:49 VerifyCode:24] Error 111 connecting to 127.0.0.1:6379. Connection refused.
+[E 161125 17:19:49 VerifyCode:33] Error 111 connecting to 127.0.0.1:6379. Connection refused.
+[I 161125 17:19:49 web:1946] 200 GET /api/verifycode?pcodeid=c133a962-ecde-48af-a8d0-7c55f55be2ec&codeid=1a2b3f84-d238-459e-b3c6-4d22363fdbbc (127.0.0.1) 43.14ms
+[E 161125 17:19:49 VerifyCode:24] Error 111 connecting to 127.0.0.1:6379. Connection refused.
+[E 161125 17:19:49 VerifyCode:33] Error 111 connecting to 127.0.0.1:6379. Connection refused.
+[I 161125 17:19:49 web:1946] 200 GET /api/verifycode?pcodeid=1a2b3f84-d238-459e-b3c6-4d22363fdbbc&codeid=2566da35-dbfc-46e3-af98-cfdce4c06a3d (127.0.0.1) 36.72ms
+[E 161125 17:19:49 VerifyCode:24] Error 111 connecting to 127.0.0.1:6379. Connection refused.
+[E 161125 17:19:49 VerifyCode:33] Error 111 connecting to 127.0.0.1:6379. Connection refused.
+[I 161125 17:19:49 web:1946] 200 GET /api/verifycode?pcodeid=2566da35-dbfc-46e3-af98-cfdce4c06a3d&codeid=34c21721-7eb4-4478-a830-b806dece6de5 (127.0.0.1) 39.79ms
+[E 161125 17:19:49 VerifyCode:24] Error 111 connecting to 127.0.0.1:6379. Connection refused.
+[E 161125 17:19:50 VerifyCode:33] Error 111 connecting to 127.0.0.1:6379. Connection refused.
+[I 161125 17:19:50 web:1946] 200 GET /api/verifycode?pcodeid=34c21721-7eb4-4478-a830-b806dece6de5&codeid=03c4608d-723a-417f-bf02-f191f456e73f (127.0.0.1) 40.28ms
+[E 161125 17:20:05 VerifyCode:24] Error 111 connecting to 127.0.0.1:6379. Connection refused.
+[E 161125 17:20:05 VerifyCode:33] Error 111 connecting to 127.0.0.1:6379. Connection refused.
+[I 161125 17:20:05 web:1946] 200 GET /api/verifycode?pcodeid=03c4608d-723a-417f-bf02-f191f456e73f&codeid=63a706ba-681c-43e8-90d3-bb1c8d606b4c (127.0.0.1) 39.73ms
+[E 161125 17:20:06 VerifyCode:24] Error 111 connecting to 127.0.0.1:6379. Connection refused.
+[E 161125 17:20:06 VerifyCode:33] Error 111 connecting to 127.0.0.1:6379. Connection refused.
+[I 161125 17:20:06 web:1946] 200 GET /api/verifycode?pcodeid=63a706ba-681c-43e8-90d3-bb1c8d606b4c&codeid=848378e5-cf25-4524-b33b-16605d57496b (127.0.0.1) 45.46ms
+[E 161125 17:20:06 VerifyCode:24] Error 111 connecting to 127.0.0.1:6379. Connection refused.
+[E 161125 17:20:06 VerifyCode:33] Error 111 connecting to 127.0.0.1:6379. Connection refused.
+[I 161125 17:20:06 web:1946] 200 GET /api/verifycode?pcodeid=848378e5-cf25-4524-b33b-16605d57496b&codeid=87f4c20e-29ac-4451-801f-36d53ce072e4 (127.0.0.1) 39.95ms
+[E 161125 17:20:06 VerifyCode:24] Error 111 connecting to 127.0.0.1:6379. Connection refused.
+[E 161125 17:20:06 VerifyCode:33] Error 111 connecting to 127.0.0.1:6379. Connection refused.
+[I 161125 17:20:06 web:1946] 200 GET /api/verifycode?pcodeid=87f4c20e-29ac-4451-801f-36d53ce072e4&codeid=2a25d3b4-663d-4c25-901b-c09fc5c4b2f4 (127.0.0.1) 37.96ms
+[E 161125 17:20:06 VerifyCode:24] Error 111 connecting to 127.0.0.1:6379. Connection refused.
+[E 161125 17:20:06 VerifyCode:33] Error 111 connecting to 127.0.0.1:6379. Connection refused.
+[I 161125 17:20:06 web:1946] 200 GET /api/verifycode?pcodeid=2a25d3b4-663d-4c25-901b-c09fc5c4b2f4&codeid=ec97fda9-23de-4d17-83d8-b0a400befe56 (127.0.0.1) 40.07ms
+[E 161125 17:20:06 VerifyCode:24] Error 111 connecting to 127.0.0.1:6379. Connection refused.
+[E 161125 17:20:06 VerifyCode:33] Error 111 connecting to 127.0.0.1:6379. Connection refused.
+[I 161125 17:20:06 web:1946] 200 GET /api/verifycode?pcodeid=ec97fda9-23de-4d17-83d8-b0a400befe56&codeid=d76e9656-52d7-4055-b95c-d0aeddebd883 (127.0.0.1) 41.34ms
+[E 161125 17:20:06 VerifyCode:24] Error 111 connecting to 127.0.0.1:6379. Connection refused.
+[E 161125 17:20:06 VerifyCode:33] Error 111 connecting to 127.0.0.1:6379. Connection refused.
+[I 161125 17:20:06 web:1946] 200 GET /api/verifycode?pcodeid=d76e9656-52d7-4055-b95c-d0aeddebd883&codeid=a10ea75f-4c8e-4d6c-b6c2-8c3667a16e1c (127.0.0.1) 46.15ms
+[E 161125 17:20:06 VerifyCode:24] Error 111 connecting to 127.0.0.1:6379. Connection refused.
+[E 161125 17:20:06 VerifyCode:33] Error 111 connecting to 127.0.0.1:6379. Connection refused.
+[I 161125 17:20:06 web:1946] 200 GET /api/verifycode?pcodeid=a10ea75f-4c8e-4d6c-b6c2-8c3667a16e1c&codeid=134f51d7-e6b7-45b6-9427-9f117e6785ed (127.0.0.1) 39.65ms
+[E 161125 17:20:07 VerifyCode:24] Error 111 connecting to 127.0.0.1:6379. Connection refused.
+[E 161125 17:20:07 VerifyCode:33] Error 111 connecting to 127.0.0.1:6379. Connection refused.
+[I 161125 17:20:07 web:1946] 200 GET /api/verifycode?pcodeid=134f51d7-e6b7-45b6-9427-9f117e6785ed&codeid=eddcb51b-6b77-477c-9816-8e7ad1c64fc1 (127.0.0.1) 38.19ms
+[E 161125 17:20:07 VerifyCode:24] Error 111 connecting to 127.0.0.1:6379. Connection refused.
+[E 161125 17:20:07 VerifyCode:33] Error 111 connecting to 127.0.0.1:6379. Connection refused.
+[I 161125 17:20:07 web:1946] 200 GET /api/verifycode?pcodeid=eddcb51b-6b77-477c-9816-8e7ad1c64fc1&codeid=511d35c1-432b-463e-ad8c-8952bb7ecb4b (127.0.0.1) 37.97ms
+[E 161125 17:20:07 VerifyCode:24] Error 111 connecting to 127.0.0.1:6379. Connection refused.
+[E 161125 17:20:07 VerifyCode:33] Error 111 connecting to 127.0.0.1:6379. Connection refused.
+[I 161125 17:20:07 web:1946] 200 GET /api/verifycode?pcodeid=511d35c1-432b-463e-ad8c-8952bb7ecb4b&codeid=b33c9afa-1d39-4673-b2b6-c386dd3adbbf (127.0.0.1) 41.34ms
+[E 161125 17:20:07 VerifyCode:24] Error 111 connecting to 127.0.0.1:6379. Connection refused.
+[E 161125 17:20:07 VerifyCode:33] Error 111 connecting to 127.0.0.1:6379. Connection refused.
+[I 161125 17:20:07 web:1946] 200 GET /api/verifycode?pcodeid=b33c9afa-1d39-4673-b2b6-c386dd3adbbf&codeid=de4d645c-8739-4f8d-b6a1-6625f79521aa (127.0.0.1) 40.87ms
+[E 161125 17:20:07 VerifyCode:24] Error 111 connecting to 127.0.0.1:6379. Connection refused.
+[E 161125 17:20:07 VerifyCode:33] Error 111 connecting to 127.0.0.1:6379. Connection refused.
+[I 161125 17:20:07 web:1946] 200 GET /api/verifycode?pcodeid=de4d645c-8739-4f8d-b6a1-6625f79521aa&codeid=751f7ee6-53ee-4b49-a895-da8d50169f6d (127.0.0.1) 49.02ms
+[E 161125 17:20:08 VerifyCode:24] Error 111 connecting to 127.0.0.1:6379. Connection refused.
+[E 161125 17:20:08 VerifyCode:33] Error 111 connecting to 127.0.0.1:6379. Connection refused.
+[I 161125 17:20:08 web:1946] 200 GET /api/verifycode?pcodeid=751f7ee6-53ee-4b49-a895-da8d50169f6d&codeid=f1cd1779-2018-41ae-9b11-fd21d9986b3b (127.0.0.1) 42.63ms
+[E 161125 17:20:08 VerifyCode:24] Error 111 connecting to 127.0.0.1:6379. Connection refused.
+[E 161125 17:20:08 VerifyCode:33] Error 111 connecting to 127.0.0.1:6379. Connection refused.
+[I 161125 17:20:08 web:1946] 200 GET /api/verifycode?pcodeid=f1cd1779-2018-41ae-9b11-fd21d9986b3b&codeid=91e9de24-3cf2-42c4-a5e7-4eff81f5b81a (127.0.0.1) 40.98ms
+[E 161125 17:20:08 VerifyCode:24] Error 111 connecting to 127.0.0.1:6379. Connection refused.
+[E 161125 17:20:08 VerifyCode:33] Error 111 connecting to 127.0.0.1:6379. Connection refused.
+[I 161125 17:20:08 web:1946] 200 GET /api/verifycode?pcodeid=91e9de24-3cf2-42c4-a5e7-4eff81f5b81a&codeid=e311e13b-792e-465c-97fe-f7793d3e2a44 (127.0.0.1) 43.27ms
+[E 161125 17:20:08 VerifyCode:24] Error 111 connecting to 127.0.0.1:6379. Connection refused.
+[E 161125 17:20:08 VerifyCode:33] Error 111 connecting to 127.0.0.1:6379. Connection refused.
+[I 161125 17:20:08 web:1946] 200 GET /api/verifycode?pcodeid=e311e13b-792e-465c-97fe-f7793d3e2a44&codeid=c217cd44-3e35-4b96-a8ce-327ed00194b1 (127.0.0.1) 43.00ms
+[E 161125 17:20:09 VerifyCode:24] Error 111 connecting to 127.0.0.1:6379. Connection refused.
+[E 161125 17:20:09 VerifyCode:33] Error 111 connecting to 127.0.0.1:6379. Connection refused.
+[I 161125 17:20:09 web:1946] 200 GET /api/verifycode?pcodeid=c217cd44-3e35-4b96-a8ce-327ed00194b1&codeid=ff5339ec-237b-4931-8373-c36409064682 (127.0.0.1) 47.61ms
+[E 161125 17:20:10 VerifyCode:24] Error 111 connecting to 127.0.0.1:6379. Connection refused.
+[E 161125 17:20:10 VerifyCode:33] Error 111 connecting to 127.0.0.1:6379. Connection refused.
+[I 161125 17:20:10 web:1946] 200 GET /api/verifycode?pcodeid=ff5339ec-237b-4931-8373-c36409064682&codeid=deb36fe0-a35c-4bb2-8370-5cbc68b41c7c (127.0.0.1) 44.13ms
+[E 161125 17:20:11 VerifyCode:24] Error 111 connecting to 127.0.0.1:6379. Connection refused.
+[E 161125 17:20:11 VerifyCode:33] Error 111 connecting to 127.0.0.1:6379. Connection refused.
+[I 161125 17:20:11 web:1946] 200 GET /api/verifycode?pcodeid=deb36fe0-a35c-4bb2-8370-5cbc68b41c7c&codeid=7df5453e-3d34-4658-9db7-71c3f9cdf903 (127.0.0.1) 59.64ms
+[E 161125 17:20:11 VerifyCode:24] Error 111 connecting to 127.0.0.1:6379. Connection refused.
+[E 161125 17:20:11 VerifyCode:33] Error 111 connecting to 127.0.0.1:6379. Connection refused.
+[I 161125 17:20:12 web:1946] 200 GET /api/verifycode?pcodeid=7df5453e-3d34-4658-9db7-71c3f9cdf903&codeid=0fec17cc-9a52-45b0-afd9-2a297ea5379c (127.0.0.1) 46.80ms
+[I 161125 17:21:53 web:1946] 304 GET /register.html (127.0.0.1) 2.21ms
+[I 161125 17:21:54 web:1946] 304 GET /static/plugins/bootstrap/css/bootstrap.min.css (127.0.0.1) 10.40ms
+[I 161125 17:21:54 web:1946] 304 GET /static/plugins/font-awesome/css/font-awesome.min.css (127.0.0.1) 2.62ms
+[I 161125 17:21:54 web:1946] 304 GET /static/css/reset.css (127.0.0.1) 2.14ms
+[I 161125 17:21:54 web:1946] 304 GET /static/images/logo@128x59.png (127.0.0.1) 4.01ms
+[I 161125 17:21:54 web:1946] 304 GET /static/plugins/bootstrap/js/bootstrap.min.js (127.0.0.1) 3.84ms
+[I 161125 17:21:54 web:1946] 304 GET /static/js/jquery.min.js (127.0.0.1) 4.99ms
+[I 161125 17:21:54 web:1946] 304 GET /static/css/ihome/register.css (127.0.0.1) 2.24ms
+[I 161125 17:21:54 web:1946] 304 GET /static/css/ihome/main.css (127.0.0.1) 2.88ms
+[I 161125 17:21:54 web:1946] 304 GET /static/js/ihome/register.js (127.0.0.1) 3.62ms
+[I 161125 17:21:54 web:1946] 200 GET /api/verifycode?pcodeid=&codeid=2eb711e0-a3a3-4025-a044-14c3b8eaa24b (127.0.0.1) 48.05ms
+[I 161125 17:22:20 web:1946] 200 GET /api/verifycode?pcodeid=2eb711e0-a3a3-4025-a044-14c3b8eaa24b&codeid=ca54ec78-bf42-465a-874a-42d56ebe9792 (127.0.0.1) 39.60ms
+[I 161125 17:22:56 web:1946] 200 GET /api/verifycode?pcodeid=ca54ec78-bf42-465a-874a-42d56ebe9792&codeid=fc486afd-53ea-47bf-88a8-aebbcef6cba1 (127.0.0.1) 34.67ms
+[I 161125 17:23:00 web:1946] 200 GET /api/verifycode?pcodeid=fc486afd-53ea-47bf-88a8-aebbcef6cba1&codeid=d90a2520-73e2-4bcb-a141-ba3123b322cc (127.0.0.1) 40.70ms
+[E 161125 17:23:14 web:1524] Uncaught exception POST /api/register (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='127.0.0.1:8000', method='POST', uri='/api/register', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Origin': 'http://127.0.0.1:8000', 'Content-Length': '59', 'Accept-Language': 'zh-CN,zh;q=0.8', 'Accept-Encoding': 'gzip, deflate', 'X-Xsrftoken': '2|aff4f423|01c8cacc703686dc5acfb0ae92881707|1480065586', 'Host': '127.0.0.1:8000', 'Accept': 'application/json, text/javascript, */*; q=0.01', 'User-Agent': 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.76 Mobile Safari/537.36', 'Connection': 'keep-alive', 'X-Requested-With': 'XMLHttpRequest', 'Referer': 'http://127.0.0.1:8000/register.html', 'Cookie': 'csrftoken=K1W4Bk10gHHLcKu4W5FtLOYm3hGyiAHp; _xsrf=2|aff4f423|01c8cacc703686dc5acfb0ae92881707|1480065586', 'Content-Type': 'application/json'})
+    Traceback (most recent call last):
+      File "/home/python/.virtualenvs/tornado_py2/local/lib/python2.7/site-packages/tornado/web.py", line 1443, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/mnt/hgfs/Desktop/tornado_project/handlers/Passport.py", line 25, in post
+        passwd = hashlib.sha256(config.passwd_hash_key + password).hexdigest()
+    NameError: global name 'password' is not defined
+[E 161125 17:23:14 web:976] Uncaught exception in write_error
+    Traceback (most recent call last):
+      File "/home/python/.virtualenvs/tornado_py2/local/lib/python2.7/site-packages/tornado/web.py", line 974, in send_error
+        self.write_error(status_code, **kwargs)
+    TypeError: write_error() takes exactly 1 argument (3 given)
+[E 161125 17:23:14 web:1946] 500 POST /api/register (127.0.0.1) 8.14ms
+[I 161125 17:23:24 web:1946] 200 GET /api/verifycode?pcodeid=d90a2520-73e2-4bcb-a141-ba3123b322cc&codeid=c3bb426b-7efd-47c7-8f89-035da2c03649 (127.0.0.1) 41.39ms
+[E 161125 17:23:32 web:1524] Uncaught exception POST /api/register (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='127.0.0.1:8000', method='POST', uri='/api/register', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Origin': 'http://127.0.0.1:8000', 'Content-Length': '59', 'Accept-Language': 'zh-CN,zh;q=0.8', 'Accept-Encoding': 'gzip, deflate', 'X-Xsrftoken': '2|aff4f423|01c8cacc703686dc5acfb0ae92881707|1480065586', 'Host': '127.0.0.1:8000', 'Accept': 'application/json, text/javascript, */*; q=0.01', 'User-Agent': 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.76 Mobile Safari/537.36', 'Connection': 'keep-alive', 'X-Requested-With': 'XMLHttpRequest', 'Referer': 'http://127.0.0.1:8000/register.html', 'Cookie': 'csrftoken=K1W4Bk10gHHLcKu4W5FtLOYm3hGyiAHp; _xsrf=2|aff4f423|01c8cacc703686dc5acfb0ae92881707|1480065586', 'Content-Type': 'application/json'})
+    Traceback (most recent call last):
+      File "/home/python/.virtualenvs/tornado_py2/local/lib/python2.7/site-packages/tornado/web.py", line 1443, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/mnt/hgfs/Desktop/tornado_project/handlers/Passport.py", line 25, in post
+        passwd = hashlib.sha256(config.passwd_hash_key + password).hexdigest()
+    NameError: global name 'password' is not defined
+[E 161125 17:23:32 web:976] Uncaught exception in write_error
+    Traceback (most recent call last):
+      File "/home/python/.virtualenvs/tornado_py2/local/lib/python2.7/site-packages/tornado/web.py", line 974, in send_error
+        self.write_error(status_code, **kwargs)
+    TypeError: write_error() takes exactly 1 argument (3 given)
+[E 161125 17:23:32 web:1946] 500 POST /api/register (127.0.0.1) 3.36ms
+[I 161125 17:24:24 autoreload:204] /mnt/hgfs/Desktop/tornado_project/handlers/Passport.py modified; restarting server
+[W 161125 17:24:43 web:1946] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (192.168.150.1) 6.37ms
+[I 161125 17:24:46 web:1946] 200 GET /api/verifycode?pcodeid=&codeid=423f8690-41f2-47e1-9a50-9c731402b78e (192.168.150.1) 77.75ms
+[I 161125 17:24:51 web:1946] 200 GET /api/verifycode?pcodeid=423f8690-41f2-47e1-9a50-9c731402b78e&codeid=c1595614-ae91-4ff4-925e-307796686b0e (192.168.150.1) 35.44ms
+[I 161125 17:24:54 web:1946] 200 GET /api/verifycode?pcodeid=c1595614-ae91-4ff4-925e-307796686b0e&codeid=5c04c8d2-48db-44ce-8f4f-ab2707b37e85 (192.168.150.1) 24.48ms
+[I 161125 17:24:54 web:1946] 200 GET /api/verifycode?pcodeid=5c04c8d2-48db-44ce-8f4f-ab2707b37e85&codeid=5decb3d2-fb85-4bf8-b3c8-9afcdb59d8b2 (192.168.150.1) 32.99ms
+[I 161125 17:25:03 web:1946] 200 POST /api/register (192.168.150.1) 235.96ms
+[I 161125 17:25:03 web:1946] 200 GET /login.html (192.168.150.1) 14.33ms
+[I 161125 17:25:03 web:1946] 200 GET /static/css/ihome/login.css (192.168.150.1) 5.38ms
+[I 161125 17:25:03 web:1946] 200 GET /static/js/ihome/login.js (192.168.150.1) 4.20ms
+[I 161125 17:25:13 web:1946] 200 GET /login.html?mobile=15003120912&password=123 (192.168.150.1) 23.73ms
+[I 161125 17:25:52 web:1946] 304 GET /login.html?mobile=15003120912&password=123 (192.168.150.1) 26.84ms
+[I 161125 17:25:52 web:1946] 304 GET /static/css/reset.css (192.168.150.1) 3.25ms
+[I 161125 17:25:52 web:1946] 304 GET /static/css/ihome/main.css (192.168.150.1) 2.67ms
+[I 161125 17:25:52 web:1946] 304 GET /static/css/ihome/login.css (192.168.150.1) 2.03ms
+[I 161125 17:25:52 web:1946] 304 GET /static/js/jquery.min.js (192.168.150.1) 2.94ms
+[I 161125 17:25:52 web:1946] 304 GET /static/plugins/bootstrap/css/bootstrap.min.css (192.168.150.1) 4.01ms
+[I 161125 17:25:52 web:1946] 304 GET /static/plugins/font-awesome/css/font-awesome.min.css (192.168.150.1) 4.54ms
+[I 161125 17:25:52 web:1946] 304 GET /static/plugins/bootstrap/js/bootstrap.min.js (192.168.150.1) 3.04ms
+[I 161125 17:25:52 web:1946] 200 GET /static/js/ihome/login.js (192.168.150.1) 6.04ms
+[I 161125 17:25:52 web:1946] 304 GET /static/images/logo@128x59.png (192.168.150.1) 3.01ms
+[W 161125 17:26:00 web:1521] 403 POST /api/login (192.168.150.1): '_xsrf' argument missing from POST
+[E 161125 17:26:00 web:976] Uncaught exception in write_error
+    Traceback (most recent call last):
+      File "/home/python/.virtualenvs/tornado_py2/local/lib/python2.7/site-packages/tornado/web.py", line 974, in send_error
+        self.write_error(status_code, **kwargs)
+    TypeError: write_error() takes exactly 1 argument (3 given)
+[W 161125 17:26:00 web:1946] 403 POST /api/login (192.168.150.1) 4.98ms
+[W 161125 17:28:09 web:1946] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (192.168.150.1) 7.53ms
+[I 161125 17:28:32 web:1946] 200 GET /static/js/ihome/login.js (192.168.150.1) 35.97ms
+[E 161125 17:28:38 web:1524] Uncaught exception POST /api/login (192.168.150.1)
+    HTTPServerRequest(protocol='http', host='192.168.150.151:8000', method='POST', uri='/api/login', version='HTTP/1.1', remote_ip='192.168.150.1', headers={'Origin': 'http://192.168.150.151:8000', 'Content-Length': '41', 'Accept-Language': 'zh-CN,zh;q=0.8', 'Accept-Encoding': 'gzip, deflate', 'X-Xsrftoken': '2|ecfe7180|96de0be883274411c03be83a5e57afcf|1480065436', 'Host': '192.168.150.151:8000', 'Accept': 'application/json, text/javascript, */*; q=0.01', 'User-Agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1', 'Connection': 'keep-alive', 'X-Requested-With': 'XMLHttpRequest', 'Referer': 'http://192.168.150.151:8000/login.html', 'Cookie': '_xsrf=2|ecfe7180|96de0be883274411c03be83a5e57afcf|1480065436; session_id="2|1:0|10:1480065903|10:session_id|44:MDI5MzhhZmI0OTU3NDRiNWJjMTk3YzY1Njg5OWQzMDE=|ddc28464fbd7b7c8ca81481a1b642939200feeb9c273034cc40eb31eaf9ca2eb"', 'Content-Type': 'application/json'})
+    Traceback (most recent call last):
+      File "/home/python/.virtualenvs/tornado_py2/local/lib/python2.7/site-packages/tornado/web.py", line 1443, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/mnt/hgfs/Desktop/tornado_project/handlers/Passport.py", line 59, in post
+        if not all([moblie,password]):
+    NameError: global name 'moblie' is not defined
+[E 161125 17:28:38 web:976] Uncaught exception in write_error
+    Traceback (most recent call last):
+      File "/home/python/.virtualenvs/tornado_py2/local/lib/python2.7/site-packages/tornado/web.py", line 974, in send_error
+        self.write_error(status_code, **kwargs)
+    TypeError: write_error() takes exactly 1 argument (3 given)
+[E 161125 17:28:38 web:1946] 500 POST /api/login (192.168.150.1) 5.80ms
+[I 161125 17:29:16 autoreload:204] /mnt/hgfs/Desktop/tornado_project/handlers/Passport.py modified; restarting server
+[I 161125 17:29:19 web:1946] 304 GET /login.html (192.168.150.1) 15.85ms
+[I 161125 17:29:19 web:1946] 304 GET /static/js/ihome/login.js (192.168.150.1) 6.84ms
+[I 161125 17:29:26 web:1946] 200 POST /api/login (192.168.150.1) 100.45ms
+[I 161125 17:30:09 web:1946] 200 POST /api/login (192.168.150.1) 4.21ms
+[I 161125 17:30:10 web:1946] 200 POST /api/login (192.168.150.1) 3.61ms
+[I 161125 17:30:17 web:1946] 200 POST /api/login (192.168.150.1) 4.03ms
+[I 161125 17:30:57 web:1946] 304 GET /login.html (192.168.150.1) 3.05ms
+[I 161125 17:30:57 web:1946] 304 GET /static/plugins/bootstrap/css/bootstrap.min.css (192.168.150.1) 7.81ms
+[I 161125 17:30:57 web:1946] 304 GET /static/plugins/font-awesome/css/font-awesome.min.css (192.168.150.1) 2.88ms
+[I 161125 17:30:57 web:1946] 304 GET /static/css/reset.css (192.168.150.1) 2.42ms
+[I 161125 17:30:57 web:1946] 304 GET /static/css/ihome/main.css (192.168.150.1) 3.61ms
+[I 161125 17:30:57 web:1946] 304 GET /static/css/ihome/login.css (192.168.150.1) 3.78ms
+[I 161125 17:30:57 web:1946] 304 GET /static/js/jquery.min.js (192.168.150.1) 4.83ms
+[I 161125 17:30:57 web:1946] 200 GET /static/js/ihome/login.js (192.168.150.1) 36.48ms
+[I 161125 17:30:57 web:1946] 304 GET /static/plugins/bootstrap/js/bootstrap.min.js (192.168.150.1) 4.02ms
+[I 161125 17:30:57 web:1946] 304 GET /static/images/logo@128x59.png (192.168.150.1) 5.37ms
+[I 161125 17:31:03 web:1946] 200 POST /api/login (192.168.150.1) 13.48ms
+[I 161125 17:31:05 web:1946] 200 POST /api/login (192.168.150.1) 2.51ms
+[I 161125 17:31:38 autoreload:204] /mnt/hgfs/Desktop/tornado_project/handlers/Passport.py modified; restarting server
+[I 161125 17:31:43 web:1946] 304 GET /login.html (192.168.150.1) 11.15ms
+[I 161125 17:31:43 web:1946] 304 GET /static/plugins/bootstrap/css/bootstrap.min.css (192.168.150.1) 5.74ms
+[I 161125 17:31:43 web:1946] 304 GET /static/css/reset.css (192.168.150.1) 2.67ms
+[I 161125 17:31:43 web:1946] 304 GET /static/css/ihome/main.css (192.168.150.1) 5.36ms
+[I 161125 17:31:43 web:1946] 304 GET /static/css/ihome/login.css (192.168.150.1) 2.32ms
+[I 161125 17:31:43 web:1946] 304 GET /static/js/jquery.min.js (192.168.150.1) 3.41ms
+[I 161125 17:31:43 web:1946] 304 GET /static/plugins/font-awesome/css/font-awesome.min.css (192.168.150.1) 4.37ms
+[I 161125 17:31:43 web:1946] 304 GET /static/plugins/bootstrap/js/bootstrap.min.js (192.168.150.1) 22.41ms
+[I 161125 17:31:43 web:1946] 304 GET /static/images/logo@128x59.png (192.168.150.1) 4.09ms
+[I 161125 17:31:43 web:1946] 200 GET /static/js/ihome/login.js (192.168.150.1) 9.16ms
+[I 161125 17:31:49 web:1946] 200 POST /api/login (192.168.150.1) 2.87ms
+[W 161125 17:31:49 web:1946] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (192.168.150.1) 6.36ms
+[I 161125 17:32:53 autoreload:204] /mnt/hgfs/Desktop/tornado_project/handlers/VerifyCode.py modified; restarting server
+[I 161125 17:33:57 autoreload:204] /mnt/hgfs/Desktop/tornado_project/handlers/VerifyCode.py modified; restarting server
+[W 161125 19:01:30 web:1946] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (192.168.150.1) 14.86ms
+[I 161125 19:01:32 web:1946] 304 GET /static/js/ihome/login.js (192.168.150.1) 25.43ms
+[I 161125 19:01:38 web:1946] 200 POST /api/login (192.168.150.1) 4.58ms
+[W 161125 19:01:39 web:1946] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (192.168.150.1) 5.01ms
+[I 161125 19:05:46 autoreload:204] /mnt/hgfs/Desktop/tornado_project/handlers/BaseHandler.py modified; restarting server
+[I 161125 19:05:52 autoreload:204] /mnt/hgfs/Desktop/tornado_project/handlers/Passport.py modified; restarting server
+[I 161125 19:07:24 autoreload:204] /mnt/hgfs/Desktop/tornado_project/urls.py modified; restarting server
+[I 161125 19:07:26 web:1946] 304 GET / (192.168.150.1) 27.81ms
+[W 161125 19:07:26 web:1946] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (192.168.150.1) 10.31ms
+[I 161125 19:07:28 web:1946] 200 GET /api/verifycode?pcodeid=&codeid=d0c77587-ba82-4bf4-bd73-280f2ffe547c (192.168.150.1) 120.96ms
+[I 161125 19:07:44 web:1946] 200 GET /api/verifycode?pcodeid=d0c77587-ba82-4bf4-bd73-280f2ffe547c&codeid=6e0efaca-cd39-4ed9-9ba6-328cba894c84 (192.168.150.1) 42.45ms
+[I 161125 19:07:54 web:1946] 200 POST /api/register (192.168.150.1) 100.56ms
+[I 161125 19:08:06 web:1946] 200 POST /api/login (192.168.150.1) 2.25ms
+[W 161125 19:08:07 web:1946] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (192.168.150.1) 6.23ms
+[I 161125 19:10:08 autoreload:204] /mnt/hgfs/Desktop/tornado_project/urls.py modified; restarting server
+[I 161125 19:11:32 autoreload:204] /mnt/hgfs/Desktop/tornado_project/urls.py modified; restarting server
+[I 161125 19:11:47 web:1946] 304 GET / (192.168.150.1) 9.10ms
+[W 161125 19:11:48 web:1946] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (192.168.150.1) 8.95ms
+[I 161125 19:11:49 web:1946] 304 GET /static/js/ihome/login.js (192.168.150.1) 4.45ms
+[I 161125 19:11:50 autoreload:204] /mnt/hgfs/Desktop/tornado_project/urls.py modified; restarting server
+[I 161125 19:11:56 web:1946] 200 POST /api/login (192.168.150.1) 8.04ms
+[W 161125 19:11:56 web:1946] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (192.168.150.1) 6.83ms
+[I 161125 19:12:52 autoreload:204] /mnt/hgfs/Desktop/tornado_project/handlers/Passport.py modified; restarting server
+[I 161125 19:12:53 web:1946] 304 GET / (192.168.150.1) 8.45ms
+[W 161125 19:12:53 web:1946] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (192.168.150.1) 11.14ms
+[I 161125 19:13:06 web:1946] 200 POST /api/login (192.168.150.1) 3.36ms
+[W 161125 19:13:06 web:1946] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (192.168.150.1) 10.60ms
+[I 161125 19:28:15 autoreload:204] /mnt/hgfs/Desktop/tornado_project/handlers/BaseHandler.py modified; restarting server
+[I 161125 19:28:34 autoreload:204] /mnt/hgfs/Desktop/tornado_project/handlers/Passport.py modified; restarting server
+[I 161125 19:29:59 autoreload:204] /mnt/hgfs/Desktop/tornado_project/handlers/BaseHandler.py modified; restarting server
+[I 161125 19:30:22 web:1946] 304 GET /static/js/ihome/login.js (192.168.150.1) 24.44ms
+[I 161125 19:30:27 web:1946] 200 POST /api/login (192.168.150.1) 4.40ms
+[W 161125 19:30:28 web:1946] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (192.168.150.1) 7.05ms
+[I 161125 19:30:53 web:1946] 304 GET / (192.168.150.1) 2.58ms
+[I 161125 19:30:53 web:1946] 304 GET /static/plugins/bootstrap/css/bootstrap.min.css (192.168.150.1) 17.91ms
+[I 161125 19:30:53 web:1946] 304 GET /static/plugins/font-awesome/css/font-awesome.min.css (192.168.150.1) 16.40ms
+[I 161125 19:30:53 web:1946] 304 GET /static/css/reset.css (192.168.150.1) 2.65ms
+[I 161125 19:30:53 web:1946] 304 GET /static/plugins/swiper/css/swiper.min.css (192.168.150.1) 17.95ms
+[I 161125 19:30:53 web:1946] 304 GET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css (192.168.150.1) 17.71ms
+[I 161125 19:30:53 web:1946] 304 GET /static/css/ihome/main.css (192.168.150.1) 2.53ms
+[I 161125 19:30:53 web:1946] 304 GET /static/css/ihome/index.css (192.168.150.1) 15.67ms
+[I 161125 19:30:53 web:1946] 304 GET /static/js/jquery.min.js (192.168.150.1) 16.95ms
+[I 161125 19:30:53 web:1946] 304 GET /static/js/template.js (192.168.150.1) 80.74ms
+[I 161125 19:30:53 web:1946] 304 GET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js (192.168.150.1) 37.66ms
+[I 161125 19:30:53 web:1946] 304 GET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js (192.168.150.1) 20.72ms
+[I 161125 19:30:53 web:1946] 304 GET /static/plugins/swiper/js/swiper.jquery.min.js (192.168.150.1) 19.42ms
+[I 161125 19:30:53 web:1946] 200 GET /static/js/ihome/index.js (192.168.150.1) 5.32ms
+[I 161125 19:30:53 web:1946] 304 GET /static/images/home01.jpg (192.168.150.1) 21.23ms
+[I 161125 19:30:53 web:1946] 304 GET /static/images/logo@128x59.png (192.168.150.1) 15.16ms
+[I 161125 19:30:53 web:1946] 304 GET /static/images/home02.jpg (192.168.150.1) 23.32ms
+[I 161125 19:30:53 web:1946] 304 GET /static/images/home03.jpg (192.168.150.1) 39.30ms
+[I 161125 19:30:53 web:1946] 304 GET /static/plugins/bootstrap/js/bootstrap.min.js (192.168.150.1) 16.73ms
+[I 161125 19:30:53 web:1946] 200 GET /api/check_login (192.168.150.1) 2.52ms
+[W 161125 19:30:54 web:1946] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (192.168.150.1) 7.21ms
+[I 161125 19:33:45 web:1946] 304 GET / (192.168.150.1) 6.88ms
+[I 161125 19:33:45 web:1946] 200 GET /static/js/ihome/index.js (192.168.150.1) 8.36ms
+[W 161125 19:33:45 web:1946] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (192.168.150.1) 4.08ms
+[I 161125 19:33:45 web:1946] 304 GET /api/check_login (192.168.150.1) 3.90ms
+[I 161125 19:33:56 web:1946] 304 GET / (192.168.150.1) 4.07ms
+[I 161125 19:33:56 web:1946] 304 GET /static/plugins/swiper/css/swiper.min.css (192.168.150.1) 5.36ms
+[I 161125 19:33:56 web:1946] 304 GET /static/plugins/bootstrap/css/bootstrap.min.css (192.168.150.1) 16.74ms
+[I 161125 19:33:56 web:1946] 304 GET /static/css/ihome/main.css (192.168.150.1) 4.15ms
+[I 161125 19:33:56 web:1946] 304 GET /static/css/ihome/index.css (192.168.150.1) 4.20ms
+[I 161125 19:33:56 web:1946] 304 GET /static/plugins/font-awesome/css/font-awesome.min.css (192.168.150.1) 4.00ms
+[I 161125 19:33:56 web:1946] 304 GET /static/css/reset.css (192.168.150.1) 8.39ms
+[I 161125 19:33:56 web:1946] 304 GET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css (192.168.150.1) 4.48ms
+[I 161125 19:33:56 web:1946] 304 GET /static/js/jquery.min.js (192.168.150.1) 5.29ms
+[I 161125 19:33:56 web:1946] 304 GET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js (192.168.150.1) 2.54ms
+[I 161125 19:33:56 web:1946] 304 GET /static/plugins/swiper/js/swiper.jquery.min.js (192.168.150.1) 5.15ms
+[I 161125 19:33:56 web:1946] 304 GET /static/plugins/bootstrap/js/bootstrap.min.js (192.168.150.1) 6.17ms
+[I 161125 19:33:56 web:1946] 304 GET /static/js/template.js (192.168.150.1) 3.28ms
+[I 161125 19:33:56 web:1946] 304 GET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js (192.168.150.1) 4.00ms
+[I 161125 19:33:56 web:1946] 304 GET /static/js/ihome/index.js (192.168.150.1) 20.49ms
+[I 161125 19:33:56 web:1946] 304 GET /static/images/home01.jpg (192.168.150.1) 10.54ms
+[I 161125 19:33:56 web:1946] 304 GET /static/images/logo@128x59.png (192.168.150.1) 4.49ms
+[I 161125 19:33:56 web:1946] 304 GET /static/images/home03.jpg (192.168.150.1) 64.30ms
+[I 161125 19:33:56 web:1946] 304 GET /static/images/home02.jpg (192.168.150.1) 22.21ms
+[I 161125 19:33:56 web:1946] 304 GET /api/check_login (192.168.150.1) 4.74ms
+[W 161125 19:33:56 web:1946] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (192.168.150.1) 2.76ms
+[I 161125 19:36:37 web:1946] 200 GET /my.html (192.168.150.1) 172.88ms
+[I 161125 19:36:37 web:1946] 200 GET /static/css/ihome/my.css (192.168.150.1) 9.76ms
+[I 161125 19:36:37 web:1946] 200 GET /static/js/ihome/my.js (192.168.150.1) 5.52ms
+[W 161125 19:37:04 web:1946] 404 GET /api/logout (192.168.150.1) 2.00ms
+[W 161125 19:37:05 web:1946] 404 GET /api/logout (192.168.150.1) 4.89ms
+[I 161125 19:38:04 autoreload:204] /mnt/hgfs/Desktop/tornado_project/handlers/Passport.py modified; restarting server
+[I 161125 19:58:36 web:1946] 304 GET / (192.168.150.1) 23.85ms
+[I 161125 19:58:36 web:1946] 304 GET /static/js/ihome/index.js (192.168.150.1) 95.56ms
+[W 161125 19:58:36 web:1946] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (192.168.150.1) 30.39ms
+[I 161125 19:58:36 web:1946] 200 GET /api/check_login (192.168.150.1) 12.59ms
+[I 161125 20:00:28 web:1946] 304 GET /my.html (192.168.150.1) 58.66ms
+[I 161125 20:00:28 web:1946] 304 GET /static/css/ihome/my.css (192.168.150.1) 24.50ms
+[I 161125 20:00:28 web:1946] 304 GET /static/js/jquery.min.js (192.168.150.1) 13.06ms
+[I 161125 20:00:28 web:1946] 304 GET /static/plugins/bootstrap/js/bootstrap.min.js (192.168.150.1) 12.97ms
+[I 161125 20:00:28 web:1946] 304 GET /static/plugins/bootstrap/css/bootstrap.min.css (192.168.150.1) 36.06ms
+[I 161125 20:00:28 web:1946] 304 GET /static/plugins/font-awesome/css/font-awesome.min.css (192.168.150.1) 28.10ms
+[I 161125 20:00:28 web:1946] 304 GET /static/css/reset.css (192.168.150.1) 6.25ms
+[I 161125 20:00:28 web:1946] 304 GET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css (192.168.150.1) 10.90ms
+[I 161125 20:00:28 web:1946] 304 GET /static/css/ihome/main.css (192.168.150.1) 2.29ms
+[I 161125 20:00:28 web:1946] 304 GET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js (192.168.150.1) 19.30ms
+[I 161125 20:00:28 web:1946] 304 GET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js (192.168.150.1) 45.64ms
+[I 161125 20:00:28 web:1946] 200 GET /static/js/ihome/my.js (192.168.150.1) 5.18ms
+[I 161125 20:00:28 web:1946] 200 GET /api/logging (192.168.150.1) 4.87ms
+[I 161125 20:00:45 web:1946] 304 GET /my.html (192.168.150.1) 2.37ms
+[I 161125 20:00:45 web:1946] 304 GET /static/plugins/bootstrap/css/bootstrap.min.css (192.168.150.1) 9.14ms
+[I 161125 20:00:45 web:1946] 304 GET /static/plugins/font-awesome/css/font-awesome.min.css (192.168.150.1) 15.57ms
+[I 161125 20:00:45 web:1946] 304 GET /static/css/reset.css (192.168.150.1) 4.79ms
+[I 161125 20:00:45 web:1946] 304 GET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css (192.168.150.1) 4.50ms
+[I 161125 20:00:45 web:1946] 304 GET /static/css/ihome/main.css (192.168.150.1) 6.11ms
+[I 161125 20:00:45 web:1946] 304 GET /static/css/ihome/my.css (192.168.150.1) 6.33ms
+[I 161125 20:00:45 web:1946] 304 GET /static/plugins/bootstrap/js/bootstrap.min.js (192.168.150.1) 6.58ms
+[I 161125 20:00:45 web:1946] 304 GET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js (192.168.150.1) 7.10ms
+[I 161125 20:00:45 web:1946] 304 GET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js (192.168.150.1) 3.60ms
+[I 161125 20:00:45 web:1946] 200 GET /static/js/ihome/my.js (192.168.150.1) 7.10ms
+[I 161125 20:00:45 web:1946] 304 GET /static/js/jquery.min.js (192.168.150.1) 13.77ms
+[I 161125 20:00:45 web:1946] 304 GET /api/logging (192.168.150.1) 4.13ms
+[I 161125 20:03:03 autoreload:204] /mnt/hgfs/Desktop/tornado_project/handlers/Passport.py modified; restarting server
+[I 161125 20:03:19 autoreload:204] /mnt/hgfs/Desktop/tornado_project/handlers/Passport.py modified; restarting server
+[I 161125 20:32:46 web:1946] 304 GET /my.html (192.168.150.1) 69.59ms
+[I 161125 20:32:46 web:1946] 200 GET /static/js/ihome/my.js (192.168.150.1) 3.80ms
+[I 161125 20:32:56 web:1946] 304 GET /static/js/ihome/index.js (192.168.150.1) 46.51ms
+[I 161125 20:32:56 web:1946] 304 GET /api/check_login (192.168.150.1) 3.76ms
+[W 161125 20:32:56 web:1946] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (192.168.150.1) 4.21ms
+[I 161125 20:32:59 web:1946] 304 GET /static/js/ihome/my.js (192.168.150.1) 5.27ms
+[I 161125 20:33:36 web:1946] 200 GET /my.html (192.168.150.1) 4.14ms
+[I 161125 20:33:36 web:1946] 304 GET /static/plugins/bootstrap/css/bootstrap.min.css (192.168.150.1) 34.12ms
+[I 161125 20:33:36 web:1946] 304 GET /static/css/ihome/main.css (192.168.150.1) 4.27ms
+[I 161125 20:33:36 web:1946] 304 GET /static/css/ihome/my.css (192.168.150.1) 7.97ms
+[I 161125 20:33:36 web:1946] 304 GET /static/plugins/font-awesome/css/font-awesome.min.css (192.168.150.1) 16.40ms
+[I 161125 20:33:36 web:1946] 304 GET /static/css/reset.css (192.168.150.1) 4.42ms
+[I 161125 20:33:36 web:1946] 304 GET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css (192.168.150.1) 25.90ms
+[I 161125 20:33:36 web:1946] 304 GET /static/js/jquery.min.js (192.168.150.1) 40.88ms
+[I 161125 20:33:36 web:1946] 304 GET /static/plugins/bootstrap/js/bootstrap.min.js (192.168.150.1) 24.87ms
+[I 161125 20:33:36 web:1946] 304 GET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js (192.168.150.1) 21.52ms
+[I 161125 20:33:36 web:1946] 304 GET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js (192.168.150.1) 15.79ms
+[I 161125 20:33:36 web:1946] 304 GET /static/js/ihome/my.js (192.168.150.1) 4.36ms
+[I 161125 20:33:38 web:1946] 304 GET /api/check_login (192.168.150.1) 2.11ms
+[W 161125 20:33:38 web:1946] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (192.168.150.1) 3.18ms
+[I 161125 20:33:40 web:1946] 304 GET /my.html (192.168.150.1) 4.91ms
+[I 161125 20:33:40 web:1946] 304 GET /static/js/ihome/my.js (192.168.150.1) 1.94ms
+[I 161125 20:34:10 web:1946] 304 GET /my.html (192.168.150.1) 3.89ms
+[I 161125 20:34:10 web:1946] 304 GET /static/css/ihome/my.css (192.168.150.1) 3.84ms
+[I 161125 20:34:10 web:1946] 304 GET /static/plugins/bootstrap/css/bootstrap.min.css (192.168.150.1) 7.41ms
+[I 161125 20:34:10 web:1946] 304 GET /static/css/ihome/main.css (192.168.150.1) 3.94ms
+[I 161125 20:34:10 web:1946] 304 GET /static/plugins/font-awesome/css/font-awesome.min.css (192.168.150.1) 5.92ms
+[I 161125 20:34:10 web:1946] 304 GET /static/css/reset.css (192.168.150.1) 3.03ms
+[I 161125 20:34:10 web:1946] 304 GET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css (192.168.150.1) 4.80ms
+[I 161125 20:34:10 web:1946] 304 GET /static/plugins/bootstrap/js/bootstrap.min.js (192.168.150.1) 4.19ms
+[I 161125 20:34:10 web:1946] 304 GET /static/js/jquery.min.js (192.168.150.1) 24.37ms
+[I 161125 20:34:10 web:1946] 304 GET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js (192.168.150.1) 4.27ms
+[I 161125 20:34:10 web:1946] 304 GET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js (192.168.150.1) 3.41ms
+[I 161125 20:34:10 web:1946] 200 GET /static/js/ihome/my.js (192.168.150.1) 6.75ms
+[I 161125 20:34:12 web:1946] 304 GET /api/check_login (192.168.150.1) 5.04ms
+[W 161125 20:34:12 web:1946] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (192.168.150.1) 5.56ms
+[I 161125 20:34:14 web:1946] 304 GET /my.html (192.168.150.1) 2.63ms
+[I 161125 20:34:14 web:1946] 304 GET /static/js/ihome/my.js (192.168.150.1) 3.46ms
+[I 161125 20:34:43 web:1946] 304 GET /my.html (192.168.150.1) 5.05ms
+[I 161125 20:34:43 web:1946] 304 GET /static/plugins/bootstrap/css/bootstrap.min.css (192.168.150.1) 6.54ms
+[I 161125 20:34:43 web:1946] 304 GET /static/css/reset.css (192.168.150.1) 4.93ms
+[I 161125 20:34:43 web:1946] 304 GET /static/plugins/font-awesome/css/font-awesome.min.css (192.168.150.1) 3.71ms
+[I 161125 20:34:43 web:1946] 304 GET /static/css/ihome/main.css (192.168.150.1) 2.63ms
+[I 161125 20:34:43 web:1946] 304 GET /static/css/ihome/my.css (192.168.150.1) 2.42ms
+[I 161125 20:34:43 web:1946] 304 GET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css (192.168.150.1) 2.82ms
+[I 161125 20:34:43 web:1946] 304 GET /static/js/jquery.min.js (192.168.150.1) 11.37ms
+[I 161125 20:34:43 web:1946] 304 GET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js (192.168.150.1) 4.98ms
+[I 161125 20:34:43 web:1946] 200 GET /static/js/ihome/my.js (192.168.150.1) 4.93ms
+[I 161125 20:34:43 web:1946] 304 GET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js (192.168.150.1) 4.29ms
+[I 161125 20:34:43 web:1946] 304 GET /static/plugins/bootstrap/js/bootstrap.min.js (192.168.150.1) 10.24ms
+[I 161125 20:34:43 web:1946] 304 GET /api/logging (192.168.150.1) 4.02ms
+[I 161125 20:34:44 web:1946] 200 GET /api/logout (192.168.150.1) 1.99ms
+[I 161125 20:35:09 web:1946] 304 GET /my.html (192.168.150.1) 3.30ms
+[I 161125 20:35:09 web:1946] 304 GET /static/plugins/bootstrap/css/bootstrap.min.css (192.168.150.1) 7.90ms
+[I 161125 20:35:09 web:1946] 304 GET /static/plugins/font-awesome/css/font-awesome.min.css (192.168.150.1) 5.43ms
+[I 161125 20:35:09 web:1946] 304 GET /static/css/reset.css (192.168.150.1) 7.03ms
+[I 161125 20:35:09 web:1946] 304 GET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css (192.168.150.1) 3.76ms
+[I 161125 20:35:09 web:1946] 304 GET /static/css/ihome/main.css (192.168.150.1) 2.75ms
+[I 161125 20:35:09 web:1946] 304 GET /static/css/ihome/my.css (192.168.150.1) 2.26ms
+[I 161125 20:35:09 web:1946] 304 GET /static/js/jquery.min.js (192.168.150.1) 6.08ms
+[I 161125 20:35:09 web:1946] 304 GET /static/plugins/bootstrap/js/bootstrap.min.js (192.168.150.1) 15.16ms
+[I 161125 20:35:09 web:1946] 304 GET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js (192.168.150.1) 6.70ms
+[I 161125 20:35:09 web:1946] 304 GET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js (192.168.150.1) 21.79ms
+[I 161125 20:35:09 web:1946] 200 GET /static/js/ihome/my.js (192.168.150.1) 5.98ms
+[I 161125 20:35:09 web:1946] 200 GET /api/logging (192.168.150.1) 3.38ms
+[I 161125 20:35:09 web:1946] 304 GET /static/js/ihome/login.js (192.168.150.1) 34.90ms
+[I 161125 20:35:14 web:1946] 200 POST /api/login (192.168.150.1) 3.63ms
+[I 161125 20:35:15 web:1946] 200 GET /api/check_login (192.168.150.1) 2.06ms
+[W 161125 20:35:15 web:1946] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (192.168.150.1) 5.17ms
+[I 161125 20:35:26 web:1946] 200 POST /api/login (192.168.150.1) 2.12ms
+[I 161125 20:35:26 web:1946] 304 GET /api/check_login (192.168.150.1) 2.58ms
+[W 161125 20:35:26 web:1946] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (192.168.150.1) 8.58ms
+[I 161125 22:13:07 web:1946] 200 GET / (192.168.150.1) 35.30ms
+[I 161125 22:13:07 web:1946] 200 GET /static/plugins/swiper/css/swiper.min.css (192.168.150.1) 74.77ms
+[I 161125 22:13:07 web:1946] 200 GET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css (192.168.150.1) 4.40ms
+[I 161125 22:13:07 web:1946] 200 GET /static/css/ihome/main.css (192.168.150.1) 3.21ms
+[I 161125 22:13:07 web:1946] 200 GET /static/css/ihome/index.css (192.168.150.1) 62.81ms
+[I 161125 22:13:07 web:1946] 200 GET /static/js/jquery.min.js (192.168.150.1) 16.45ms
+[I 161125 22:13:07 web:1946] 200 GET /static/plugins/bootstrap/css/bootstrap.min.css (192.168.150.1) 12.92ms
+[I 161125 22:13:07 web:1946] 200 GET /static/plugins/font-awesome/css/font-awesome.min.css (192.168.150.1) 4.78ms
+[I 161125 22:13:07 web:1946] 200 GET /static/css/reset.css (192.168.150.1) 2.74ms
+[I 161125 22:13:07 web:1946] 200 GET /static/plugins/bootstrap/js/bootstrap.min.js (192.168.150.1) 16.01ms
+[I 161125 22:13:07 web:1946] 200 GET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js (192.168.150.1) 7.60ms
+[I 161125 22:13:07 web:1946] 200 GET /static/plugins/swiper/js/swiper.jquery.min.js (192.168.150.1) 30.95ms
+[I 161125 22:13:07 web:1946] 200 GET /static/js/template.js (192.168.150.1) 22.72ms
+[I 161125 22:13:07 web:1946] 200 GET /static/js/ihome/index.js (192.168.150.1) 4.46ms
+[I 161125 22:13:07 web:1946] 200 GET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js (192.168.150.1) 4.09ms
+[I 161125 22:13:07 web:1946] 200 GET /static/images/logo@128x59.png (192.168.150.1) 27.25ms
+[I 161125 22:13:07 web:1946] 200 GET /static/images/home01.jpg (192.168.150.1) 37.56ms
+[I 161125 22:13:07 web:1946] 200 GET /static/plugins/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.3 (192.168.150.1) 37.77ms
+[I 161125 22:13:07 web:1946] 200 GET /static/images/home02.jpg (192.168.150.1) 132.08ms
+[I 161125 22:13:07 web:1946] 200 GET /static/images/home03.jpg (192.168.150.1) 64.56ms
+[W 161125 22:13:07 web:1946] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (192.168.150.1) 19.00ms
+[I 161125 22:13:07 web:1946] 200 GET /api/check_login (192.168.150.1) 2.07ms
+[I 161125 22:13:08 web:1946] 200 GET /static/plugins/bootstrap/css/bootstrap.min.css.map (192.168.150.1) 335.23ms
+[I 161125 22:13:08 web:1946] 200 GET /favicon.ico (192.168.150.1) 21.83ms
+[I 161125 22:13:10 web:1946] 200 GET /login.html (192.168.150.1) 26.75ms
+[I 161125 22:13:10 web:1946] 200 GET /static/css/ihome/login.css (192.168.150.1) 16.07ms
+[I 161125 22:13:10 web:1946] 200 GET /static/js/ihome/login.js (192.168.150.1) 16.63ms
+[I 161125 22:13:20 web:1946] 200 POST /api/login (192.168.150.1) 8.45ms
+[I 161125 22:13:28 web:1946] 200 POST /api/login (192.168.150.1) 4.83ms
+[I 161125 22:13:28 web:1946] 304 GET /api/check_login (192.168.150.1) 2.51ms
+[W 161125 22:13:28 web:1946] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (192.168.150.1) 10.34ms
+[I 161125 22:15:10 web:1946] 304 GET / (192.168.150.1) 3.56ms
+[I 161125 22:15:10 web:1946] 304 GET /api/check_login (192.168.150.1) 2.68ms
+[W 161125 22:15:10 web:1946] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (192.168.150.1) 7.18ms
+[I 161125 22:15:38 web:1946] 200 POST /api/login (192.168.150.1) 6.05ms
+[I 161125 22:15:39 web:1946] 304 GET /api/check_login (192.168.150.1) 2.88ms
+[W 161125 22:15:39 web:1946] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (192.168.150.1) 5.93ms
+[I 161125 22:16:39 web:1946] 304 GET / (192.168.150.1) 10.04ms
+[I 161125 22:16:40 web:1946] 304 GET /static/plugins/bootstrap/css/bootstrap.min.css (192.168.150.1) 7.43ms
+[I 161125 22:16:40 web:1946] 304 GET /static/plugins/font-awesome/css/font-awesome.min.css (192.168.150.1) 4.46ms
+[I 161125 22:16:40 web:1946] 304 GET /static/css/reset.css (192.168.150.1) 4.20ms
+[I 161125 22:16:40 web:1946] 304 GET /static/plugins/swiper/css/swiper.min.css (192.168.150.1) 4.72ms
+[I 161125 22:16:40 web:1946] 304 GET /static/css/ihome/index.css (192.168.150.1) 6.94ms
+[I 161125 22:16:40 web:1946] 304 GET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css (192.168.150.1) 2.65ms
+[I 161125 22:16:40 web:1946] 304 GET /static/css/ihome/main.css (192.168.150.1) 2.02ms
+[I 161125 22:16:40 web:1946] 304 GET /static/js/jquery.min.js (192.168.150.1) 4.82ms
+[I 161125 22:16:40 web:1946] 304 GET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js (192.168.150.1) 21.90ms
+[I 161125 22:16:40 web:1946] 304 GET /static/plugins/bootstrap/js/bootstrap.min.js (192.168.150.1) 12.30ms
+[I 161125 22:16:40 web:1946] 304 GET /static/js/ihome/index.js (192.168.150.1) 3.64ms
+[I 161125 22:16:40 web:1946] 304 GET /static/js/template.js (192.168.150.1) 2.58ms
+[I 161125 22:16:40 web:1946] 304 GET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js (192.168.150.1) 3.48ms
+[I 161125 22:16:40 web:1946] 304 GET /static/plugins/swiper/js/swiper.jquery.min.js (192.168.150.1) 5.02ms
+[I 161125 22:16:40 web:1946] 304 GET /static/images/logo@128x59.png (192.168.150.1) 2.37ms
+[I 161125 22:16:40 web:1946] 304 GET /static/images/home01.jpg (192.168.150.1) 10.52ms
+[I 161125 22:16:40 web:1946] 304 GET /static/images/home02.jpg (192.168.150.1) 8.30ms
+[I 161125 22:16:40 web:1946] 304 GET /static/images/home03.jpg (192.168.150.1) 6.96ms
+[I 161125 22:16:40 web:1946] 304 GET /api/check_login (192.168.150.1) 3.28ms
+[W 161125 22:16:40 web:1946] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (192.168.150.1) 3.18ms
+[I 161125 22:16:45 autoreload:204] /mnt/hgfs/Desktop/tornado_project/handlers/Passport.py modified; restarting server
+[I 161125 22:16:45 autoreload:204] /mnt/hgfs/Desktop/tornado_project/handlers/Passport.py modified; restarting server
+[I 161125 22:20:13 web:1946] 304 GET / (192.168.150.1) 12.93ms
+[I 161125 22:20:13 web:1946] 304 GET /api/check_login (192.168.150.1) 3.20ms
+[W 161125 22:20:13 web:1946] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (192.168.150.1) 8.80ms
+[I 161125 22:20:16 web:1946] 200 GET /register.html (192.168.150.1) 23.12ms
+[I 161125 22:20:16 web:1946] 200 GET /static/css/ihome/register.css (192.168.150.1) 16.93ms
+[I 161125 22:20:16 web:1946] 200 GET /static/js/ihome/register.js (192.168.150.1) 22.44ms
+[I 161125 22:20:17 web:1946] 200 GET /api/verifycode?pcodeid=&codeid=b0bba373-7e4c-4b63-9842-794fdaa9421c (192.168.150.1) 91.81ms
+[I 161125 22:20:37 web:1946] 200 POST /api/register (192.168.150.1) 52.63ms
+[I 161125 22:20:59 web:1946] 200 POST /api/login (192.168.150.1) 6.68ms
+[I 161125 22:20:59 web:1946] 200 GET /api/check_login (192.168.150.1) 7.63ms
+[W 161125 22:20:59 web:1946] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (192.168.150.1) 5.14ms
+[I 161125 22:21:04 web:1946] 200 GET /my.html (192.168.150.1) 9.46ms
+[I 161125 22:21:05 web:1946] 200 GET /static/css/ihome/my.css (192.168.150.1) 10.83ms
+[I 161125 22:21:05 web:1946] 200 GET /static/js/ihome/my.js (192.168.150.1) 5.70ms
+[I 161125 22:21:05 web:1946] 200 GET /api/logging (192.168.150.1) 4.71ms
+[W 161125 22:21:07 web:1946] 404 GET /api/logout (192.168.150.1) 4.39ms
+[I 161125 22:21:18 autoreload:204] /mnt/hgfs/Desktop/tornado_project/urls.py modified; restarting server
+[I 161125 22:21:35 web:1946] 304 GET /my.html (192.168.150.1) 27.65ms
+[I 161125 22:21:35 web:1946] 304 GET /static/plugins/bootstrap/css/bootstrap.min.css (192.168.150.1) 9.79ms
+[I 161125 22:21:35 web:1946] 304 GET /static/plugins/font-awesome/css/font-awesome.min.css (192.168.150.1) 11.03ms
+[I 161125 22:21:35 web:1946] 304 GET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css (192.168.150.1) 5.07ms
+[I 161125 22:21:35 web:1946] 304 GET /static/css/ihome/main.css (192.168.150.1) 5.97ms
+[I 161125 22:21:35 web:1946] 304 GET /static/css/ihome/my.css (192.168.150.1) 2.05ms
+[I 161125 22:21:35 web:1946] 304 GET /static/js/jquery.min.js (192.168.150.1) 7.80ms
+[I 161125 22:21:35 web:1946] 304 GET /static/plugins/bootstrap/js/bootstrap.min.js (192.168.150.1) 3.71ms
+[I 161125 22:21:35 web:1946] 304 GET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js (192.168.150.1) 4.67ms
+[I 161125 22:21:35 web:1946] 304 GET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js (192.168.150.1) 2.36ms
+[I 161125 22:21:35 web:1946] 304 GET /static/js/ihome/my.js (192.168.150.1) 2.28ms
+[I 161125 22:21:35 web:1946] 304 GET /static/css/reset.css (192.168.150.1) 3.54ms
+[I 161125 22:21:35 web:1946] 304 GET /api/logging (192.168.150.1) 2.80ms
+[I 161125 22:21:45 web:1946] 200 GET /api/logout (192.168.150.1) 13.07ms
+[I 161125 22:21:47 web:1946] 200 GET /api/check_login (192.168.150.1) 7.03ms
+[W 161125 22:21:47 web:1946] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (192.168.150.1) 5.46ms
+[I 161125 22:21:58 web:1946] 200 POST /api/login (192.168.150.1) 5.96ms
+[I 161125 22:21:59 web:1946] 304 GET /api/check_login (192.168.150.1) 3.40ms
+[W 161125 22:21:59 web:1946] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (192.168.150.1) 3.92ms
+[I 161125 22:23:16 web:1946] 304 GET / (192.168.150.1) 7.37ms
+[I 161125 22:23:16 web:1946] 304 GET /static/plugins/bootstrap/css/bootstrap.min.css (192.168.150.1) 12.28ms
+[I 161125 22:23:16 web:1946] 304 GET /static/plugins/swiper/css/swiper.min.css (192.168.150.1) 4.13ms
+[I 161125 22:23:16 web:1946] 304 GET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css (192.168.150.1) 6.62ms
+[I 161125 22:23:16 web:1946] 304 GET /static/css/ihome/main.css (192.168.150.1) 3.43ms
+[I 161125 22:23:16 web:1946] 304 GET /static/plugins/font-awesome/css/font-awesome.min.css (192.168.150.1) 2.51ms
+[I 161125 22:23:16 web:1946] 304 GET /static/css/reset.css (192.168.150.1) 2.79ms
+[I 161125 22:23:16 web:1946] 304 GET /static/js/jquery.min.js (192.168.150.1) 3.06ms
+[I 161125 22:23:16 web:1946] 304 GET /static/css/ihome/index.css (192.168.150.1) 1.91ms
+[I 161125 22:23:16 web:1946] 304 GET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js (192.168.150.1) 3.16ms
+[I 161125 22:23:16 web:1946] 304 GET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js (192.168.150.1) 3.08ms
+[I 161125 22:23:16 web:1946] 304 GET /static/plugins/swiper/js/swiper.jquery.min.js (192.168.150.1) 9.26ms
+[I 161125 22:23:16 web:1946] 304 GET /static/js/ihome/index.js (192.168.150.1) 4.15ms
+[I 161125 22:23:16 web:1946] 304 GET /static/js/template.js (192.168.150.1) 2.23ms
+[I 161125 22:23:16 web:1946] 304 GET /static/plugins/bootstrap/js/bootstrap.min.js (192.168.150.1) 3.63ms
+[I 161125 22:23:16 web:1946] 304 GET /static/images/logo@128x59.png (192.168.150.1) 3.72ms
+[I 161125 22:23:16 web:1946] 304 GET /static/images/home02.jpg (192.168.150.1) 9.07ms
+[I 161125 22:23:16 web:1946] 304 GET /static/images/home03.jpg (192.168.150.1) 6.45ms
+[I 161125 22:23:16 web:1946] 304 GET /static/images/home01.jpg (192.168.150.1) 14.26ms
+[I 161125 22:23:16 web:1946] 304 GET /api/check_login (192.168.150.1) 2.14ms
+[W 161125 22:23:16 web:1946] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (192.168.150.1) 2.68ms
+[I 161125 22:23:18 autoreload:204] /mnt/hgfs/Desktop/tornado_project/handlers/Passport.py modified; restarting server
+[I 161125 22:23:26 web:1946] 200 POST /api/login (192.168.150.1) 14.24ms
+[I 161125 22:23:26 web:1946] 304 GET /api/check_login (192.168.150.1) 5.63ms
+[W 161125 22:23:26 web:1946] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (192.168.150.1) 7.06ms
+[I 161125 22:23:33 web:1946] 200 GET /api/verifycode?pcodeid=&codeid=bbe0e335-a5cd-4b95-92b7-3a22ad385329 (192.168.150.1) 52.37ms
+[E 161125 22:23:49 Passport:33] (1062, "Duplicate entry '15003120920' for key 'up_name'")
+[I 161125 22:23:49 web:1946] 200 POST /api/register (192.168.150.1) 250.68ms
+[I 161125 22:24:02 web:1946] 200 POST /api/register (192.168.150.1) 65.02ms
+[I 161125 22:24:23 web:1946] 200 POST /api/login (192.168.150.1) 5.07ms
+[I 161125 22:24:23 web:1946] 200 GET /api/check_login (192.168.150.1) 3.28ms
+[W 161125 22:24:24 web:1946] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (192.168.150.1) 6.78ms
+[I 161125 22:25:27 autoreload:204] /mnt/hgfs/Desktop/tornado_project/handlers/Passport.py modified; restarting server
+[I 161125 22:26:57 web:1946] 304 GET / (192.168.150.1) 16.35ms
+[I 161125 22:26:58 web:1946] 304 GET /api/check_login (192.168.150.1) 3.13ms
+[W 161125 22:26:58 web:1946] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (192.168.150.1) 11.58ms
+[I 161125 22:27:02 web:1946] 200 GET /api/logging (192.168.150.1) 2.08ms
+[I 161125 22:27:11 web:1946] 304 GET /api/logout (192.168.150.1) 3.42ms
+[I 161125 22:27:13 web:1946] 200 GET /api/check_login (192.168.150.1) 2.16ms
+[W 161125 22:27:13 web:1946] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (192.168.150.1) 12.31ms
+[I 161125 22:27:25 web:1946] 200 POST /api/login (192.168.150.1) 17.27ms
+[I 161125 22:27:28 web:1946] 200 POST /api/login (192.168.150.1) 4.35ms
+[I 161125 22:27:28 web:1946] 304 GET /api/check_login (192.168.150.1) 1.97ms
+[W 161125 22:27:28 web:1946] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (192.168.150.1) 3.17ms
+[I 161126 09:42:54 web:1946] 200 GET / (192.168.150.1) 83.89ms
+[I 161126 09:42:54 web:1946] 200 GET /static/js/jquery.min.js (192.168.150.1) 26.00ms
+[I 161126 09:42:54 web:1946] 200 GET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css (192.168.150.1) 27.46ms
+[I 161126 09:42:54 web:1946] 200 GET /static/css/ihome/main.css (192.168.150.1) 48.02ms
+[I 161126 09:42:54 web:1946] 200 GET /static/css/reset.css (192.168.150.1) 5.88ms
+[I 161126 09:42:54 web:1946] 200 GET /static/plugins/swiper/css/swiper.min.css (192.168.150.1) 35.30ms
+[I 161126 09:42:54 web:1946] 200 GET /static/plugins/font-awesome/css/font-awesome.min.css (192.168.150.1) 20.96ms
+[I 161126 09:42:54 web:1946] 200 GET /static/css/ihome/index.css (192.168.150.1) 10.12ms
+[I 161126 09:42:54 web:1946] 200 GET /static/images/logo@128x59.png (192.168.150.1) 17.06ms
+[I 161126 09:42:54 web:1946] 200 GET /static/plugins/bootstrap/css/bootstrap.min.css (192.168.150.1) 60.30ms
+[I 161126 09:42:54 web:1946] 200 GET /static/images/home03.jpg (192.168.150.1) 86.07ms
+[I 161126 09:42:54 web:1946] 200 GET /static/plugins/bootstrap/js/bootstrap.min.js (192.168.150.1) 25.40ms
+[I 161126 09:42:54 web:1946] 200 GET /static/plugins/swiper/js/swiper.jquery.min.js (192.168.150.1) 26.61ms
+[I 161126 09:42:54 web:1946] 200 GET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js (192.168.150.1) 23.57ms
+[I 161126 09:42:54 web:1946] 200 GET /static/images/home01.jpg (192.168.150.1) 41.98ms
+[I 161126 09:42:55 web:1946] 200 GET /static/images/home02.jpg (192.168.150.1) 40.81ms
+[I 161126 09:42:55 web:1946] 200 GET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js (192.168.150.1) 30.97ms
+[I 161126 09:42:55 web:1946] 200 GET /static/js/template.js (192.168.150.1) 19.24ms
+[I 161126 09:42:55 web:1946] 200 GET /static/js/ihome/index.js (192.168.150.1) 4.95ms
+[I 161126 09:42:55 web:1946] 200 GET /static/plugins/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.3 (192.168.150.1) 219.22ms
+[I 161126 09:42:56 web:1946] 200 GET /api/check_login (192.168.150.1) 2.48ms
+[W 161126 09:43:03 web:1946] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (192.168.150.1) 43.53ms
+[I 161126 09:43:03 web:1946] 200 GET /static/plugins/bootstrap/css/bootstrap.min.css.map (192.168.150.1) 106.51ms
+[I 161126 09:43:27 web:1946] 200 GET /login.html (192.168.150.1) 77.17ms
+[I 161126 09:43:27 web:1946] 200 GET /static/css/ihome/login.css (192.168.150.1) 30.38ms
+[I 161126 09:43:27 web:1946] 200 GET /static/js/ihome/login.js (192.168.150.1) 20.69ms
+[I 161126 09:44:02 web:1946] 200 POST /api/login (192.168.150.1) 174.91ms
+[I 161126 09:44:03 web:1946] 304 GET /api/check_login (192.168.150.1) 1.73ms
+[W 161126 09:44:03 web:1946] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (192.168.150.1) 3.71ms
+[I 161126 09:47:13 web:1946] 200 GET /register.html (192.168.150.1) 17.59ms
+[I 161126 09:47:13 web:1946] 200 GET /static/css/ihome/register.css (192.168.150.1) 37.69ms
+[I 161126 09:47:13 web:1946] 200 GET /static/js/ihome/register.js (192.168.150.1) 29.32ms
+[E 161126 09:47:13 VerifyCode:33] Error 111 connecting to 127.0.0.1:6379. Connection refused.
+[I 161126 09:47:13 web:1946] 200 GET /api/verifycode?pcodeid=&codeid=6994a768-afe6-4b94-bf1e-55c66750e2f0 (192.168.150.1) 271.28ms
+[I 161126 09:48:53 web:1946] 304 GET /register.html (192.168.150.1) 2.32ms
+[I 161126 09:48:53 web:1946] 304 GET /static/plugins/bootstrap/css/bootstrap.min.css (192.168.150.1) 21.47ms
+[I 161126 09:48:53 web:1946] 304 GET /static/css/reset.css (192.168.150.1) 5.28ms
+[I 161126 09:48:53 web:1946] 304 GET /static/plugins/font-awesome/css/font-awesome.min.css (192.168.150.1) 5.27ms
+[I 161126 09:48:53 web:1946] 304 GET /static/js/jquery.min.js (192.168.150.1) 4.72ms
+[I 161126 09:48:53 web:1946] 304 GET /static/css/ihome/main.css (192.168.150.1) 11.18ms
+[I 161126 09:48:53 web:1946] 304 GET /static/css/ihome/register.css (192.168.150.1) 6.66ms
+[I 161126 09:48:53 web:1946] 304 GET /static/plugins/bootstrap/js/bootstrap.min.js (192.168.150.1) 5.95ms
+[I 161126 09:48:53 web:1946] 304 GET /static/js/ihome/register.js (192.168.150.1) 3.08ms
+[I 161126 09:48:53 web:1946] 304 GET /static/images/logo@128x59.png (192.168.150.1) 3.23ms
+[I 161126 09:48:53 web:1946] 200 GET /api/verifycode?pcodeid=&codeid=b9fe23f1-b14c-4e37-bd50-a3324919ae75 (192.168.150.1) 42.97ms
+[I 161126 09:49:06 web:1946] 200 POST /api/login (192.168.150.1) 2.42ms
+[I 161126 09:49:06 web:1946] 304 GET /api/check_login (192.168.150.1) 1.32ms
+[W 161126 09:49:06 web:1946] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (192.168.150.1) 10.66ms
+[I 161126 09:54:00 web:1946] 200 GET /api/verifycode?pcodeid=&codeid=0db9ab64-09fa-4f40-a0fc-9ae2def42aba (192.168.150.1) 29.89ms
+[I 161126 09:54:16 web:1946] 200 POST /api/register (192.168.150.1) 1.85ms
+[I 161126 09:54:21 web:1946] 200 POST /api/register (192.168.150.1) 96.67ms
+[I 161126 09:54:33 web:1946] 200 POST /api/login (192.168.150.1) 14.44ms
+[I 161126 09:54:33 web:1946] 200 GET /api/check_login (192.168.150.1) 1.83ms
+[W 161126 09:54:34 web:1946] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (192.168.150.1) 3.21ms
+[I 161126 09:55:01 autoreload:204] /mnt/hgfs/Desktop/tornado_project/handlers/Passport.py modified; restarting server
+[I 161126 09:55:05 web:1946] 200 GET /my.html (192.168.150.1) 18.20ms
+[I 161126 09:55:05 web:1946] 200 GET /static/css/ihome/my.css (192.168.150.1) 19.53ms
+[I 161126 09:55:05 web:1946] 200 GET /static/js/ihome/my.js (192.168.150.1) 4.66ms
+[I 161126 09:55:06 web:1946] 200 GET /api/profile (192.168.150.1) 1.97ms
+[I 161126 09:55:06 web:1946] 200 GET /api/logout (192.168.150.1) 7.12ms
+[I 161126 09:55:08 web:1946] 200 GET /api/check_login (192.168.150.1) 1.12ms
+[W 161126 09:55:08 web:1946] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (192.168.150.1) 8.89ms
+[I 161126 09:55:16 web:1946] 200 POST /api/login (192.168.150.1) 3.86ms
+[I 161126 09:55:16 web:1946] 200 GET /api/check_login (192.168.150.1) 1.97ms
+[W 161126 09:55:16 web:1946] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (192.168.150.1) 3.47ms
+[I 161126 09:55:18 web:1946] 200 GET /api/profile (192.168.150.1) 2.39ms
+[I 161126 09:55:21 web:1946] 304 GET /api/logout (192.168.150.1) 1.91ms
+[I 161126 09:55:23 web:1946] 200 GET /api/check_login (192.168.150.1) 1.57ms
+[W 161126 09:55:23 web:1946] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (192.168.150.1) 8.08ms
+[I 161126 09:55:33 web:1946] 200 POST /api/login (192.168.150.1) 2.40ms
+[I 161126 09:55:33 web:1946] 200 GET /api/check_login (192.168.150.1) 2.18ms
+[W 161126 09:55:33 web:1946] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (192.168.150.1) 4.12ms
+[I 161126 09:55:36 web:1946] 200 GET /api/profile (192.168.150.1) 1.98ms
+[I 161126 09:55:43 web:1946] 200 GET /profile.html (192.168.150.1) 77.96ms
+[I 161126 09:55:43 web:1946] 200 GET /static/css/ihome/profile.css (192.168.150.1) 8.87ms
+[I 161126 09:55:43 web:1946] 200 GET /static/js/jquery.form.min.js (192.168.150.1) 28.56ms
+[I 161126 09:55:43 web:1946] 200 GET /static/js/ihome/profile.js (192.168.150.1) 20.95ms
+[E 161126 09:55:59 http1connection:54] Uncaught exception
+    Traceback (most recent call last):
+      File "/home/python/.virtualenvs/tornado_py2/local/lib/python2.7/site-packages/tornado/http1connection.py", line 185, in _read_message
+        header_future = delegate.headers_received(start_line, headers)
+      File "/home/python/.virtualenvs/tornado_py2/local/lib/python2.7/site-packages/tornado/httpserver.py", line 275, in headers_received
+        return self.delegate.headers_received(start_line, headers)
+      File "/home/python/.virtualenvs/tornado_py2/local/lib/python2.7/site-packages/tornado/web.py", line 1963, in headers_received
+        headers=headers))
+      File "/home/python/.virtualenvs/tornado_py2/local/lib/python2.7/site-packages/tornado/web.py", line 1971, in set_request
+        self.stream_request_body = _has_stream_request_body(self.handler_class)
+      File "/home/python/.virtualenvs/tornado_py2/local/lib/python2.7/site-packages/tornado/web.py", line 1656, in _has_stream_request_body
+        if not issubclass(cls, RequestHandler):
+    TypeError: issubclass() arg 1 must be a class
+[E 161126 09:55:59 http1connection:54] Uncaught exception
+    Traceback (most recent call last):
+      File "/home/python/.virtualenvs/tornado_py2/local/lib/python2.7/site-packages/tornado/http1connection.py", line 259, in _read_message
+        delegate.on_connection_close()
+      File "/home/python/.virtualenvs/tornado_py2/local/lib/python2.7/site-packages/tornado/httpserver.py", line 296, in on_connection_close
+        self.delegate.on_connection_close()
+      File "/home/python/.virtualenvs/tornado_py2/local/lib/python2.7/site-packages/tornado/web.py", line 2025, in on_connection_close
+        if self.stream_request_body:
+    AttributeError: '_RequestDispatcher' object has no attribute 'stream_request_body'
+[E 161126 09:55:59 http1connection:54] Uncaught exception
+    Traceback (most recent call last):
+      File "/home/python/.virtualenvs/tornado_py2/local/lib/python2.7/site-packages/tornado/http1connection.py", line 185, in _read_message
+        header_future = delegate.headers_received(start_line, headers)
+      File "/home/python/.virtualenvs/tornado_py2/local/lib/python2.7/site-packages/tornado/httpserver.py", line 275, in headers_received
+        return self.delegate.headers_received(start_line, headers)
+      File "/home/python/.virtualenvs/tornado_py2/local/lib/python2.7/site-packages/tornado/web.py", line 1963, in headers_received
+        headers=headers))
+      File "/home/python/.virtualenvs/tornado_py2/local/lib/python2.7/site-packages/tornado/web.py", line 1971, in set_request
+        self.stream_request_body = _has_stream_request_body(self.handler_class)
+      File "/home/python/.virtualenvs/tornado_py2/local/lib/python2.7/site-packages/tornado/web.py", line 1656, in _has_stream_request_body
+        if not issubclass(cls, RequestHandler):
+    TypeError: issubclass() arg 1 must be a class
+[E 161126 09:55:59 http1connection:54] Uncaught exception
+    Traceback (most recent call last):
+      File "/home/python/.virtualenvs/tornado_py2/local/lib/python2.7/site-packages/tornado/http1connection.py", line 259, in _read_message
+        delegate.on_connection_close()
+      File "/home/python/.virtualenvs/tornado_py2/local/lib/python2.7/site-packages/tornado/httpserver.py", line 296, in on_connection_close
+        self.delegate.on_connection_close()
+      File "/home/python/.virtualenvs/tornado_py2/local/lib/python2.7/site-packages/tornado/web.py", line 2025, in on_connection_close
+        if self.stream_request_body:
+    AttributeError: '_RequestDispatcher' object has no attribute 'stream_request_body'
+[E 161126 09:55:59 http1connection:54] Uncaught exception
+    Traceback (most recent call last):
+      File "/home/python/.virtualenvs/tornado_py2/local/lib/python2.7/site-packages/tornado/http1connection.py", line 185, in _read_message
+        header_future = delegate.headers_received(start_line, headers)
+      File "/home/python/.virtualenvs/tornado_py2/local/lib/python2.7/site-packages/tornado/httpserver.py", line 275, in headers_received
+        return self.delegate.headers_received(start_line, headers)
+      File "/home/python/.virtualenvs/tornado_py2/local/lib/python2.7/site-packages/tornado/web.py", line 1963, in headers_received
+        headers=headers))
+      File "/home/python/.virtualenvs/tornado_py2/local/lib/python2.7/site-packages/tornado/web.py", line 1971, in set_request
+        self.stream_request_body = _has_stream_request_body(self.handler_class)
+      File "/home/python/.virtualenvs/tornado_py2/local/lib/python2.7/site-packages/tornado/web.py", line 1656, in _has_stream_request_body
+        if not issubclass(cls, RequestHandler):
+    TypeError: issubclass() arg 1 must be a class
+[E 161126 09:55:59 http1connection:54] Uncaught exception
+    Traceback (most recent call last):
+      File "/home/python/.virtualenvs/tornado_py2/local/lib/python2.7/site-packages/tornado/http1connection.py", line 259, in _read_message
+        delegate.on_connection_close()
+      File "/home/python/.virtualenvs/tornado_py2/local/lib/python2.7/site-packages/tornado/httpserver.py", line 296, in on_connection_close
+        self.delegate.on_connection_close()
+      File "/home/python/.virtualenvs/tornado_py2/local/lib/python2.7/site-packages/tornado/web.py", line 2025, in on_connection_close
+        if self.stream_request_body:
+    AttributeError: '_RequestDispatcher' object has no attribute 'stream_request_body'
+[E 161126 09:55:59 http1connection:54] Uncaught exception
+    Traceback (most recent call last):
+      File "/home/python/.virtualenvs/tornado_py2/local/lib/python2.7/site-packages/tornado/http1connection.py", line 185, in _read_message
+        header_future = delegate.headers_received(start_line, headers)
+      File "/home/python/.virtualenvs/tornado_py2/local/lib/python2.7/site-packages/tornado/httpserver.py", line 275, in headers_received
+        return self.delegate.headers_received(start_line, headers)
+      File "/home/python/.virtualenvs/tornado_py2/local/lib/python2.7/site-packages/tornado/web.py", line 1963, in headers_received
+        headers=headers))
+      File "/home/python/.virtualenvs/tornado_py2/local/lib/python2.7/site-packages/tornado/web.py", line 1971, in set_request
+        self.stream_request_body = _has_stream_request_body(self.handler_class)
+      File "/home/python/.virtualenvs/tornado_py2/local/lib/python2.7/site-packages/tornado/web.py", line 1656, in _has_stream_request_body
+        if not issubclass(cls, RequestHandler):
+    TypeError: issubclass() arg 1 must be a class
+[E 161126 09:55:59 http1connection:54] Uncaught exception
+    Traceback (most recent call last):
+      File "/home/python/.virtualenvs/tornado_py2/local/lib/python2.7/site-packages/tornado/http1connection.py", line 259, in _read_message
+        delegate.on_connection_close()
+      File "/home/python/.virtualenvs/tornado_py2/local/lib/python2.7/site-packages/tornado/httpserver.py", line 296, in on_connection_close
+        self.delegate.on_connection_close()
+      File "/home/python/.virtualenvs/tornado_py2/local/lib/python2.7/site-packages/tornado/web.py", line 2025, in on_connection_close
+        if self.stream_request_body:
+    AttributeError: '_RequestDispatcher' object has no attribute 'stream_request_body'
+[I 161126 10:01:26 autoreload:204] /mnt/hgfs/Desktop/tornado_project/urls.py modified; restarting server
+[W 161126 10:01:39 web:1946] 405 GET /api/profile/avatar (192.168.150.1) 3.21ms
+[I 161126 10:01:42 web:1946] 304 GET /api/profile (192.168.150.1) 8.12ms
+[I 161126 10:01:48 web:1946] 304 GET /api/profile (192.168.150.1) 1.44ms
+[I 161126 10:02:01 web:1946] 304 GET /api/check_login (192.168.150.1) 1.87ms
+[I 161126 10:02:01 web:1946] 304 GET /api/check_login (192.168.150.1) 2.13ms
+[W 161126 10:02:02 web:1946] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (192.168.150.1) 4.94ms
+[I 161126 10:02:03 web:1946] 304 GET /static/js/ihome/my.js (192.168.150.1) 14.34ms
+[I 161126 10:02:04 web:1946] 304 GET /api/profile (192.168.150.1) 3.64ms

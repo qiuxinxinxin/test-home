@@ -1,0 +1,5 @@
+1 验证码
+js生成codeid和pcodeid
+接收到codeid和pcodeid
+后端生成一个codeimg codetext 
+将codeid codetext 存在缓存里
